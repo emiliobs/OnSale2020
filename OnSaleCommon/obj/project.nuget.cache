@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WmVA7cHBgHZ98+HsWECIMjC6pU5ZhrMBbN5bR+0OT+i7fClq5U4nNXcfE/P2onA/GVwOkGLeBF6ZVLBPcHsZlw==",
+  "success": true,
+  "projectFilePath": "C:\\Projects4\\OnSale2020\\OnSaleCommon\\OnSaleCommon.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
