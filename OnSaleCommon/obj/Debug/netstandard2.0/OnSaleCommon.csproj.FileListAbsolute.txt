@@ -1,0 +1,9 @@
+C:\Projects4\OnSale2020\OnSaleCommon\bin\Debug\netstandard2.0\OnSaleCommon.deps.json
+C:\Projects4\OnSale2020\OnSaleCommon\bin\Debug\netstandard2.0\OnSaleCommon.dll
+C:\Projects4\OnSale2020\OnSaleCommon\bin\Debug\netstandard2.0\OnSaleCommon.pdb
+C:\Projects4\OnSale2020\OnSaleCommon\obj\Debug\netstandard2.0\OnSaleCommon.csprojAssemblyReference.cache
+C:\Projects4\OnSale2020\OnSaleCommon\obj\Debug\netstandard2.0\OnSaleCommon.AssemblyInfoInputs.cache
+C:\Projects4\OnSale2020\OnSaleCommon\obj\Debug\netstandard2.0\OnSaleCommon.AssemblyInfo.cs
+C:\Projects4\OnSale2020\OnSaleCommon\obj\Debug\netstandard2.0\OnSaleCommon.csproj.CoreCompileInputs.cache
+C:\Projects4\OnSale2020\OnSaleCommon\obj\Debug\netstandard2.0\OnSaleCommon.dll
+C:\Projects4\OnSale2020\OnSaleCommon\obj\Debug\netstandard2.0\OnSaleCommon.pdb
