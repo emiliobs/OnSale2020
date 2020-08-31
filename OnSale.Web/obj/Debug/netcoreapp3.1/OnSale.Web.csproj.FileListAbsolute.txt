@@ -9,7 +9,6 @@ C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\OnSale.Web.dll
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\OnSale.Web.pdb
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\OnSale.Web.Views.dll
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\OnSale.Web.Views.pdb
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.csprojAssemblyReference.cache
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.AssemblyInfoInputs.cache
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.AssemblyInfo.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.RazorAssemblyInfo.cache
@@ -166,10 +165,15 @@ C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnal
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.csproj.CoreCompileInputs.cache
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Countries\Create.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Countries\Delete.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Countries\Details.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Countries\Edit.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Countries\Index.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_DeleteDialog.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\libman.json
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.csproj.CoreCompileInputs.cache
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.csprojAssemblyReference.cache
+C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\OnSaleCommon.dll
+C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\OnSaleCommon.pdb
