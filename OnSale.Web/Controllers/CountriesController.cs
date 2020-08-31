@@ -116,6 +116,7 @@ namespace OnSale.Web.Controllers
                 {
                     _context.Update(country);
                     await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
                 }
                 catch (DbUpdateException dbUpdateException)
                 {
@@ -134,7 +135,6 @@ namespace OnSale.Web.Controllers
                     ModelState.AddModelError(string.Empty, ex.Message);
                 }
 
-                return RedirectToAction(nameof(Index));
             }
             return View(country);
         }

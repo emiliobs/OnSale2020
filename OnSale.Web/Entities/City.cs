@@ -1,13 +1,14 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace OnSale.Web.Entities
 {
-    public class Country
+    public class City
     {
         public int Id { get; set; }
 
@@ -15,9 +16,11 @@ namespace OnSale.Web.Entities
         [Required]
         public string Name { get; set; }
 
-        public ICollection<Department> Departments { get; set; }
+        [JsonIgnore]
+        [NotMapped]
+        public int IdDepartment { get; set; }
 
-        [DisplayName("Departments Number")]
-        public int DepartmentsNumber => Departments == null ? 0 : Departments.Count;
+        //public Department Department { get; set; }
+
     }
 }
