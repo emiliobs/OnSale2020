@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kgJVwNTLZ+rfXmRazoAfhhWB6oJNgKvTVOxc4KqXbahwhbYmfgG7B8U7dahbpK8YCwG5GOmlhWzSTBUlrApqhw==",
+  "dgSpecHash": "VtQpW2U+9USarbHNNFJSqaBpQ4/W2foEpRYpV4InQHvFiiqwfKKqe+sBx+kdH85CJnwXmEZYUC8byDhawuNFcQ==",
   "success": true,
   "projectFilePath": "C:\\Projects4\\OnSale2020\\OnSale.Web\\OnSale.Web.csproj",
   "expectedPackageFiles": [
@@ -62,7 +62,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Emilio\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\popper.js\\1.16.1\\popper.js.1.16.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

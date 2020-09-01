@@ -17,7 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OnSaleCommon\OnSaleCommon.csproj" />
+    <Folder Include="Entities\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Onsale.Common\Onsale.Common.csproj" />
   </ItemGroup>
 
 </Project>

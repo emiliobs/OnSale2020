@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OnSale.Web.Entities;
+using Onsale.Common.Entities;
 
 namespace OnSale.Web.Data
 {

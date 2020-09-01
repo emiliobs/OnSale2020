@@ -1,4 +1,4 @@
-﻿@model OnSale.Web.Entities.Country
+﻿@model Onsale.Common.Entities.Country
 
 @{
     ViewData["Title"] = "Edit";
@@ -13,11 +13,9 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
+
+            <partial name="_Country" />
+
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-warning" />
                 <a asp-action="Index" class="btn btn-dark">Back to List</a>

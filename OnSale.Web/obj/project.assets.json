@@ -1030,7 +1030,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -2859,14 +2859,18 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "OnSaleCommon/1.0.0": {
+      "Onsale.Common/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "System.ComponentModel.Annotations": "4.7.0"
+        },
         "compile": {
-          "bin/placeholder/OnSaleCommon.dll": {}
+          "bin/placeholder/Onsale.Common.dll": {}
         },
         "runtime": {
-          "bin/placeholder/OnSaleCommon.dll": {}
+          "bin/placeholder/Onsale.Common.dll": {}
         }
       }
     }
@@ -4412,10 +4416,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
-      "path": "newtonsoft.json/11.0.2",
+      "path": "newtonsoft.json/12.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4438,8 +4442,9 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "NuGet.Frameworks/4.7.0": {
@@ -9044,10 +9049,10 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "OnSaleCommon/1.0.0": {
+    "Onsale.Common/1.0.0": {
       "type": "project",
-      "path": "../OnSaleCommon/OnSaleCommon.csproj",
-      "msbuildProject": "../OnSaleCommon/OnSaleCommon.csproj"
+      "path": "../Onsale.Common/Onsale.Common.csproj",
+      "msbuildProject": "../Onsale.Common/Onsale.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9057,7 +9062,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.7",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.7",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.4",
-      "OnSaleCommon >= 1.0.0",
+      "Onsale.Common >= 1.0.0",
       "bootstrap >= 4.5.2"
     ]
   },
@@ -9094,8 +9099,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Projects4\\OnSale2020\\OnSaleCommon\\OnSaleCommon.csproj": {
-              "projectPath": "C:\\Projects4\\OnSale2020\\OnSaleCommon\\OnSaleCommon.csproj"
+            "C:\\Projects4\\OnSale2020\\Onsale.Common\\Onsale.Common.csproj": {
+              "projectPath": "C:\\Projects4\\OnSale2020\\Onsale.Common\\Onsale.Common.csproj"
             }
           }
         }

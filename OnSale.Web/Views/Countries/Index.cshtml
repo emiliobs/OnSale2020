@@ -1,11 +1,11 @@
-﻿@model IEnumerable<OnSale.Web.Entities.Country>
+﻿@model IEnumerable<Onsale.Common.Entities.Country>
 
 @{
     ViewData["Title"] = "Index";
 }
 
 
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
 <br />
 
 
@@ -26,6 +26,9 @@
                             <th>
                                 @Html.DisplayNameFor(model => model.Name)
                             </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.DepartmentsNumber)
+                            </th>
                             <th></th>
                         </tr>
                     </thead>
@@ -37,9 +40,13 @@
                                     @Html.DisplayFor(modelItem => item.Name)
                                 </td>
                                 <td>
-                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning"><i class="glyphicon glyphicon-pencil">Edit</i></a>
-                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info"><i class="glyphicon glyphicon-align-justify"></i>Details</a>
-                                    <button data-id="@item.Id" class="btn btn-danger deleteItem" data-toggle="modal" data-target="#deleteDialog"><i class="glyphicon glyphicon-trash">Delete</i></button>
+                                    @Html.DisplayFor(modelItem => item.DepartmentsNumber)
+                                </td>
+                               
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"> </i></a>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info"><i class="glyphicon glyphicon-align-justify"></i> </a>
+                                    <button data-id="@item.Id" class="btn btn-danger deleteItem" data-toggle="modal" data-target="#deleteDialog"><i class="glyphicon glyphicon-trash"> </i></button>
                                 </td>
                             </tr>
                         }
@@ -55,7 +62,7 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
     <script src="/js/deleteDialog.js"></script>
 
     <script type="text/javascript">
