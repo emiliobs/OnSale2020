@@ -149,7 +149,7 @@ namespace OnSale.Web.Controllers
                 return NotFound();
             }
 
-            Country country = await _context.Countries
+            Country country = await _context.Countries.Include(c => c.Departments).ThenInclude(d => d.Cities)
                 .FirstOrDefaultAsync(m => m.Id == id);
 
             if (country == null)
@@ -211,7 +211,7 @@ namespace OnSale.Web.Controllers
                     _context.Update(country);
                     await _context.SaveChangesAsync();
 
-                    return RedirectToAction("Details","Countries", new { id = country.Id} );
+                    return RedirectToAction("Details", "Countries", new { id = country.Id });
                 }
                 catch (DbUpdateException dbUpdateEception)
                 {
@@ -249,7 +249,7 @@ namespace OnSale.Web.Controllers
                 return NotFound();
             }
 
-            var country = await _context.Countries.FirstOrDefaultAsync(c => c.Departments.FirstOrDefault(d => d.Id == department.Id) != null );
+            var country = await _context.Countries.FirstOrDefaultAsync(c => c.Departments.FirstOrDefault(d => d.Id == department.Id) != null);
             department.IdCountry = country.Id;
             return View(department);
         }
@@ -266,7 +266,7 @@ namespace OnSale.Web.Controllers
                     await _context.SaveChangesAsync();
                     return RedirectToAction("Details", "Countries", new { id = department.IdCountry });
                 }
-                catch(DbUpdateException dbUpdateException)
+                catch (DbUpdateException dbUpdateException)
                 {
                     if (dbUpdateException.InnerException.Message.Contains("duplicate"))
                     {
@@ -280,12 +280,32 @@ namespace OnSale.Web.Controllers
                 catch (Exception ex)
                 {
 
-                    ModelState.AddModelError(string.Empty, ex.Message );
+                    ModelState.AddModelError(string.Empty, ex.Message);
                 }
             }
 
             return View(department);
         }
+
+        public async Task<IActionResult> DeleteDepartment(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var department = await _context.Departments.Include(d => d.Cities).FirstOrDefaultAsync(m => m.Id == id);
+            if (department == null)
+            {
+                return NotFound();
+            }
+
+            var country = await _context.Countries.FirstOrDefaultAsync(c => c.Departments.FirstOrDefault(d => d.Id == department.Id) != null);
+            _context.Departments.Remove(department);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Details","Countries", new { id = country.Id });
+        }
+
         //private bool CountryExists(int id)
         //{
         //    return _context.Countries.Any(e => e.Id == id);
