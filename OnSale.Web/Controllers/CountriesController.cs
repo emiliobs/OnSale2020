@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Onsale.Common.Entities;
 using OnSale.Web.Data;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
@@ -210,7 +211,7 @@ namespace OnSale.Web.Controllers
                     _context.Update(country);
                     await _context.SaveChangesAsync();
 
-                    return RedirectToAction("Details","Countries", new { id =country.Id} );
+                    return RedirectToAction("Details","Countries", new { id = country.Id} );
                 }
                 catch (DbUpdateException dbUpdateEception)
                 {
@@ -234,6 +235,57 @@ namespace OnSale.Web.Controllers
             return View(department);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> EditDepartment(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var department = await _context.Departments.FindAsync(id);
+            if (department == null)
+            {
+                return NotFound();
+            }
+
+            var country = await _context.Countries.FirstOrDefaultAsync(c => c.Departments.FirstOrDefault(d => d.Id == department.Id) != null );
+            department.IdCountry = country.Id;
+            return View(department);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditDepartment(Department department)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(department);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction("Details", "Countries", new { id = department.IdCountry });
+                }
+                catch(DbUpdateException dbUpdateException)
+                {
+                    if (dbUpdateException.InnerException.Message.Contains("duplicate"))
+                    {
+                        ModelState.AddModelError(string.Empty, "There are a record with the sema name.");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, dbUpdateException.InnerException.Message);
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    ModelState.AddModelError(string.Empty, ex.Message );
+                }
+            }
+
+            return View(department);
+        }
         //private bool CountryExists(int id)
         //{
         //    return _context.Countries.Any(e => e.Id == id);
