@@ -26,6 +26,8 @@ namespace OnSale.Web
             {
                 cfg.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+
+            services.AddTransient<SeedDB>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
