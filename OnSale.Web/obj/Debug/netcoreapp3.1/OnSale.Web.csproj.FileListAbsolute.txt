@@ -188,3 +188,4 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.csproj.Cor
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Categories\_Category.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Create.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Edit.cshtml.g.cs

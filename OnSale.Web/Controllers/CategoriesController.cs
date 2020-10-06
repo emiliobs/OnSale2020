@@ -73,5 +73,64 @@ namespace OnSale.Web.Controllers
 
             return View(model);
         }
+
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var category = await _dataContext.Categories.FindAsync(id);
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            var model = _converterHelper.ToCategoryViewModel(category);
+            return View(model);
+        }
+
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public async Task<IActionResult> Edit(CategoryViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var imageId = Guid.Empty;
+                
+                if (model.ImageId != null)
+                {
+                    imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "categories");
+
+                }
+
+                try
+                {
+                    var category = _converterHelper.ToCatogory(model, imageId, false);
+                    _dataContext.Update(category);
+                    await _dataContext.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                catch(DbUpdateException dbUpdateException)
+                {
+                    if (dbUpdateException.InnerException.Message.Contains("duplicate"))
+                    {
+                        ModelState.AddModelError(string.Empty, "There are a record with the same Name.");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, dbUpdateException.Message);
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    ModelState.AddModelError(string.Empty, ex.Message);
+                }
+            }
+
+            return View(model);
+        }
     }
 }
