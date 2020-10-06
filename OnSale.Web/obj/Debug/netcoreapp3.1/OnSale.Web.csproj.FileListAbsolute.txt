@@ -184,3 +184,4 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Countries
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Countries\DetailsDepartment.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Countries\AddCity.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Countries\_city.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Index.cshtml.g.cs
