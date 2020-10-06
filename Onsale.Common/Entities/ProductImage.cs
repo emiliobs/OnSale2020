@@ -15,8 +15,8 @@ namespace Onsale.Common.Entities
         //TODO: Pending to put the correct paths
         [Display(Name = "Image")]
         public string ImageFullPath => ImageId == Guid.Empty
-            ? $"https://localhost:44390/images/noimage.png"
-            : $"https://onsale.blob.core.windows.net/products/{ImageId}";
+            ? $"https://localhost:44372/images/noimage.png"
+            : $"https://onsaleemilio.blob.core.windows.net/products/{ImageId}";
 
     }
 }

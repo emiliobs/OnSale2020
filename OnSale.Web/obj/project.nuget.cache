@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mqWlkVadnaIRxoFLl7bmAvXeEKkHAKs3176NQHIyE3n/IAvSgbBZ7Wkz9bPldUcE8n8a9ou6XH8KE3z+8iimHA==",
+  "dgSpecHash": "Su4tfbPPeujIu1QcfN3uXqS583veQFURYCWt7iX/xrATSXU4R7ip55NN5txmCfmc1RiiKVwX+IKNgeWqGmQk7A==",
   "success": true,
   "projectFilePath": "C:\\Projects4\\OnSale2020\\OnSale.Web\\OnSale.Web.csproj",
   "expectedPackageFiles": [
@@ -175,7 +175,8 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Emilio\\.nuget\\packages\\windowsazure.storage\\9.3.3\\windowsazure.storage.9.3.3.nupkg.sha512"
   ],
   "logs": []
 }

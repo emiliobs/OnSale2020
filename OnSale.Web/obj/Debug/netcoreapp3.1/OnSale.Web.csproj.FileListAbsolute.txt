@@ -148,8 +148,6 @@ C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\Onsale.Common.pdb
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.csprojAssemblyReference.cache
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.AssemblyInfoInputs.cache
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.AssemblyInfo.cs
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.csproj.CoreCompileInputs.cache
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.RazorAssemblyInfo.cache
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.RazorAssemblyInfo.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.TagHelpers.input.cache
@@ -185,3 +183,8 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Countries
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Countries\AddCity.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Countries\_city.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Index.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\Microsoft.WindowsAzure.Storage.dll
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.csproj.CoreCompileInputs.cache
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Categories\_Category.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Create.cshtml.g.cs
