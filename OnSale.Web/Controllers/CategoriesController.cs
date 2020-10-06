@@ -132,5 +132,33 @@ namespace OnSale.Web.Controllers
 
             return View(model);
         }
+
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var category = await _dataContext.Categories.FirstOrDefaultAsync(c => c.Id == id);
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            try
+            {
+                _dataContext.Categories.Remove(category);
+                await _dataContext.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+
+                ModelState.AddModelError(string.Empty, ex.Message);
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
