@@ -12,5 +12,9 @@ namespace OnSale.Web.Helpers
         Category ToCatogory(CategoryViewModel model, Guid imageId, bool isNew);
 
         CategoryViewModel ToCategoryViewModel(Category category);
+
+        Task<Product> ToProductAsync(ProductViewModel model, bool isNew);
+
+        ProductViewModel ToProductViewModel(Product product);
     }
 }

@@ -31,6 +31,7 @@ namespace OnSale.Web
             services.AddTransient<SeedDB>();
             services.AddScoped<IBlobHelper, BlobHelper>();
             services.AddScoped<IConverterHelper, ConverterHelper>();
+            services.AddScoped<ICombosHelper, CombosHelper>();
 
         }
 

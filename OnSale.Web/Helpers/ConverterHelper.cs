@@ -1,4 +1,5 @@
 ﻿using Onsale.Common.Entities;
+using OnSale.Web.Data;
 using OnSale.Web.Models;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,16 @@ namespace OnSale.Web.Helpers
 {
     public class ConverterHelper : IConverterHelper
     {
+        private readonly DataContext _context;
+        private readonly ICombosHelper _combosHelper;
+
+        public ConverterHelper(DataContext context, ICombosHelper combosHelper)
+        {
+            _context = context;
+            _combosHelper = combosHelper;
+        }
+
+
         public CategoryViewModel ToCategoryViewModel(Category category)
         {
             return new CategoryViewModel
@@ -26,6 +37,39 @@ namespace OnSale.Web.Helpers
                 Id = isNew ? 0 : model.Id,
                 ImageId = imageId,
                 Name = model.Name,
+            };
+        }
+
+        public async Task<Product> ToProductAsync(ProductViewModel model, bool isNew)
+        {
+            return new Product
+            {
+                Category = await _context.Categories.FindAsync(model.CategoryId),
+                Description = model.Description,
+                Id = isNew  ? 0 : model.Id,
+                IsActive = model.IsActive,
+                IsStarred = model.IsStarred,
+                Name = model.Name,
+                ProductImages = model.ProductImages,
+                Price = model.Price,
+                
+            };
+        }
+
+        public ProductViewModel ToProductViewModel(Product product)
+        {
+            return new ProductViewModel 
+            {
+              Categories = _combosHelper.GetComboCategories(),
+              Category = product.Category,
+              CategoryId = product.Category.Id,
+              Description = product.Description,
+              Id = product.Id,
+              IsActive = product.IsActive,
+              IsStarred = product.IsStarred,
+              Name = product.Name,
+              Price = product.Price,
+              ProductImages = product.ProductImages,
             };
         }
     }
