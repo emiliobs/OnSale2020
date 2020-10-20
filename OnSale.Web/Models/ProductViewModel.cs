@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Onsale.Common.Entities;
 using System;
 using System.Collections.Generic;
@@ -16,5 +17,8 @@ namespace OnSale.Web.Models
         public int CategoryId { get; set; }
         
         public IEnumerable<SelectListItem> Categories { get; set; }
+
+        [Display(Name = "Image")]
+        public IFormFile ImageFile { get; set; }
     }
 }
