@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -33,7 +32,7 @@ namespace OnSale.Web.Controllers
 
         public IActionResult Create()
         {
-            var model = new ProductViewModel
+            ProductViewModel model = new ProductViewModel
             {
                 Categories = _combosHelper.GetComboCategories(),
                 IsActive = true,
@@ -51,11 +50,11 @@ namespace OnSale.Web.Controllers
             {
                 try
                 {
-                    var product = await _converterHelper.ToProductAsync(model, true);
+                    Product product = await _converterHelper.ToProductAsync(model, true);
 
                     if (model.ImageFile != null)
                     {
-                        var imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "products");
+                        Guid imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "products");
                         product.ProductImages = new List<ProductImage>
                         {
                             new ProductImage{ ImageId = imageId }
@@ -96,7 +95,7 @@ namespace OnSale.Web.Controllers
                 return NotFound();
             }
 
-            var product = await _context.Products.Include(p => p.Category)
+            Product product = await _context.Products.Include(p => p.Category)
                                                  .Include(p => p.ProductImages)
                                                  .FirstOrDefaultAsync(p => p.Id == id);
             if (product == null)
@@ -104,7 +103,7 @@ namespace OnSale.Web.Controllers
                 return NotFound();
             }
 
-            var model = _converterHelper.ToProductViewModel(product);
+            ProductViewModel model = _converterHelper.ToProductViewModel(product);
             return View(model);
         }
 
@@ -116,11 +115,11 @@ namespace OnSale.Web.Controllers
             {
                 try
                 {
-                    var product = await _converterHelper.ToProductAsync(model, false);
+                    Product product = await _converterHelper.ToProductAsync(model, false);
 
                     if (model.ImageFile == null)
                     {
-                        var imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "products");
+                        Guid imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "products");
                         if (product.ProductImages == null)
                         {
                             product.ProductImages = new List<ProductImage>();
@@ -149,6 +148,34 @@ namespace OnSale.Web.Controllers
 
             model.Categories = _combosHelper.GetComboCategories();
             return View(model);
+        }
+
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Product product = await _context.Products.Include(P => P.ProductImages).FirstOrDefaultAsync(P => P.Id == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            try
+            {
+                _context.Products.Remove(product);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, ex.Message);
+            }
+
+            return RedirectToAction(nameof(Index));
+
+
         }
     }
 }
