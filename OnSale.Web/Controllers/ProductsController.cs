@@ -185,7 +185,7 @@ namespace OnSale.Web.Controllers
                 return NotFound();
             }
 
-            var product = await _context.Products.Include(c => c.Category).Include(c => c.ProductImages)
+            Product product = await _context.Products.Include(c => c.Category).Include(c => c.ProductImages)
                                                  .FirstOrDefaultAsync(m => m.Id == id);
             if (product == null)
             {
@@ -194,6 +194,59 @@ namespace OnSale.Web.Controllers
 
             return View(product);
         }
+
+        public async Task<IActionResult> AddImage(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Product product = await _context.Products.FindAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            AddProductImageViewModel model = new AddProductImageViewModel { ProductId = product.Id };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddImage(AddProductImageViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                Product product = await _context.Products.Include(p => p.ProductImages).FirstOrDefaultAsync(p => p.Id == model.ProductId);
+                if (product == null)
+                {
+                    return NotFound();
+                }
+
+                try
+                {
+                    Guid imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "products");
+                    if (product.ProductImages == null)
+                    {
+                        product.ProductImages = new List<ProductImage>();
+                    }
+
+                    product.ProductImages.Add(new ProductImage { ImageId = imageId });
+                    _context.Update(product);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction("Details", "Products", new { id = product.Id });
+                }
+                catch (Exception ex)
+                {
+
+                    ModelState.AddModelError(string.Empty, ex.Message);
+                }
+
+            }
+            return View(model);
+        }
+
 
     }
 }
