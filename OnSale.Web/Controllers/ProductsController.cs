@@ -117,7 +117,7 @@ namespace OnSale.Web.Controllers
                 {
                     Product product = await _converterHelper.ToProductAsync(model, false);
 
-                    if (model.ImageFile == null)
+                    if (model.ImageFile != null)
                     {
                         Guid imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "products");
                         if (product.ProductImages == null)
@@ -177,5 +177,23 @@ namespace OnSale.Web.Controllers
 
 
         }
+
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var product = await _context.Products.Include(c => c.Category).Include(c => c.ProductImages)
+                                                 .FirstOrDefaultAsync(m => m.Id == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return View(product);
+        }
+
     }
 }
