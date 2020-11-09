@@ -192,3 +192,4 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.genruntime
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\Create.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\_Product.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\Edit.cshtml.g.cs

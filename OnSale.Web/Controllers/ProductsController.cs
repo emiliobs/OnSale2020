@@ -25,7 +25,7 @@ namespace OnSale.Web.Controllers
             _combosHelper = combosHelper;
             _converterHelper = converterHelper;
         }
-        
+
         public async Task<IActionResult> Index()
         {
             return View(await _context.Products.Include(p => p.Category).Include(p => p.ProductImages).ToListAsync());
@@ -33,11 +33,11 @@ namespace OnSale.Web.Controllers
 
         public IActionResult Create()
         {
-            var model = new ProductViewModel 
+            var model = new ProductViewModel
             {
-               Categories = _combosHelper.GetComboCategories(), 
-               IsActive = true,
-               
+                Categories = _combosHelper.GetComboCategories(),
+                IsActive = true,
+
             };
 
             return View(model);
@@ -52,13 +52,13 @@ namespace OnSale.Web.Controllers
                 try
                 {
                     var product = await _converterHelper.ToProductAsync(model, true);
-                    
+
                     if (model.ImageFile != null)
                     {
                         var imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "products");
-                        product.ProductImages = new List<ProductImage> 
-                        { 
-                            new ProductImage{ ImageId = imageId } 
+                        product.ProductImages = new List<ProductImage>
+                        {
+                            new ProductImage{ ImageId = imageId }
                         };
                     }
 
@@ -66,7 +66,7 @@ namespace OnSale.Web.Controllers
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
                 }
-                catch(DbUpdateException dbUpdateException)
+                catch (DbUpdateException dbUpdateException)
                 {
                     if (dbUpdateException.InnerException.Message.Contains("duplicate"))
                     {
@@ -86,8 +86,69 @@ namespace OnSale.Web.Controllers
 
             model.Categories = _combosHelper.GetComboCategories();
 
-             return View(model);
+            return View(model);
         }
 
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var product = await _context.Products.Include(p => p.Category)
+                                                 .Include(p => p.ProductImages)
+                                                 .FirstOrDefaultAsync(p => p.Id == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            var model = _converterHelper.ToProductViewModel(product);
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(ProductViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var product = await _converterHelper.ToProductAsync(model, false);
+
+                    if (model.ImageFile == null)
+                    {
+                        var imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "products");
+                        if (product.ProductImages == null)
+                        {
+                            product.ProductImages = new List<ProductImage>();
+                        }
+                        product.ProductImages.Add(new ProductImage { ImageId = imageId });
+                    }
+
+                    _context.Update(product);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (DbUpdateConcurrencyException dbUpdateException)
+                {
+                    if (dbUpdateException.InnerException.Message.Contains("duplicate"))
+                    {
+                        ModelState.AddModelError(string.Empty, "There are a record with the same Name.");
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    ModelState.AddModelError(string.Empty, ex.Message);
+                }
+
+            }
+
+            model.Categories = _combosHelper.GetComboCategories();
+            return View(model);
+        }
     }
 }
