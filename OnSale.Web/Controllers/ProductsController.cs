@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -247,6 +248,27 @@ namespace OnSale.Web.Controllers
             return View(model);
         }
 
+        public async Task<IActionResult> DeleteImage(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();              
+
+            }
+
+            ProductImage productImage = await _context.ProductImages.FirstOrDefaultAsync(m => m.Id == id);
+            if (productImage == null)
+            {
+                return NotFound();
+            }
+
+            var product = await _context.Products.FirstOrDefaultAsync(p => p.ProductImages
+                                                 .FirstOrDefault(pi => pi.Id == productImage.Id) != null);
+            _context.ProductImages.Remove(productImage);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Details","Products", new { id = product.Id });
+
+        }
 
     }
 }
