@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Onsale.Common.Entities;
 using OnSale.Web.Data;
 using OnSale.Web.Helpers;
 using OnSale.Web.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace OnSale.Web.Controllers
 {
@@ -252,7 +252,7 @@ namespace OnSale.Web.Controllers
         {
             if (id == null)
             {
-                return NotFound();              
+                return NotFound();
 
             }
 
@@ -266,7 +266,7 @@ namespace OnSale.Web.Controllers
                                                  .FirstOrDefault(pi => pi.Id == productImage.Id) != null);
             _context.ProductImages.Remove(productImage);
             await _context.SaveChangesAsync();
-            return RedirectToAction("Details","Products", new { id = product.Id });
+            return RedirectToAction("Details", "Products", new { id = product.Id });
 
         }
 

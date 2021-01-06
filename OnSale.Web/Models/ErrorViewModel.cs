@@ -1,5 +1,3 @@
-using System;
-
 namespace OnSale.Web.Models
 {
     public class ErrorViewModel

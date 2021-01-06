@@ -23,7 +23,7 @@ namespace OnSale.Web
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<DataContext>(cfg => 
+            services.AddDbContext<DataContext>(cfg =>
             {
                 cfg.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });

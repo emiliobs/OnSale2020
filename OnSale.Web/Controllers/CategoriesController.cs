@@ -98,7 +98,7 @@ namespace OnSale.Web.Controllers
             if (ModelState.IsValid)
             {
                 var imageId = Guid.Empty;
-                
+
                 if (model.ImageId != null)
                 {
                     imageId = await _blobHelper.UploadBlobAsync(model.ImageFile, "categories");
@@ -112,7 +112,7 @@ namespace OnSale.Web.Controllers
                     await _dataContext.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
                 }
-                catch(DbUpdateException dbUpdateException)
+                catch (DbUpdateException dbUpdateException)
                 {
                     if (dbUpdateException.InnerException.Message.Contains("duplicate"))
                     {

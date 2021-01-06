@@ -325,7 +325,7 @@ namespace OnSale.Web.Controllers
             return View(department);
         }
 
-       
+
         [HttpGet]
         public async Task<IActionResult> AddCity(int? id)
         {
@@ -366,7 +366,7 @@ namespace OnSale.Web.Controllers
                     await _context.SaveChangesAsync();
                     return RedirectToAction("DetailsDepartment", "Countries", new { id = department.Id });
                 }
-                catch(DbUpdateException dbUpdateException)
+                catch (DbUpdateException dbUpdateException)
                 {
                     if (dbUpdateException.InnerException.Message.Contains("duplicate"))
                     {
@@ -380,7 +380,7 @@ namespace OnSale.Web.Controllers
                 catch (Exception ex)
                 {
                     ModelState.AddModelError(string.Empty, ex.Message);
-                    
+
                 }
 
             }

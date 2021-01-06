@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Onsale.Common.Entities;
 
 namespace OnSale.Web.Models
 {
-    public class AddProductImageViewModel 
+    public class AddProductImageViewModel
     {
         public int ProductId { get; set; }
 
         [Display(Name = "Image")]
         [Required]
-        public IFormFile ImageFile  { get; set; }
+        public IFormFile ImageFile { get; set; }
     }
 }

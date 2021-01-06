@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace Onsale.Common.Entities
 {
-   public class ProductImage
+    public class ProductImage
     {
         public int Id { get; set; }
 

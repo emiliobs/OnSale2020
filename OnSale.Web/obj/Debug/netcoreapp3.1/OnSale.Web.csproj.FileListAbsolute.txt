@@ -1,7 +1,6 @@
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\libman.json
-C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\OnSale.Web.exe
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\OnSale.Web.deps.json
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\netcoreapp3.1\OnSale.Web.runtimeconfig.json
@@ -153,6 +152,9 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.csproj.Cor
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.RazorAssemblyInfo.cache
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.RazorAssemblyInfo.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\staticwebassets\OnSale.Web.StaticWebAssets.Manifest.cache
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\staticwebassets\OnSale.Web.StaticWebAssets.xml
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\scopedcss\bundle\OnSale.Web.styles.css
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.TagHelpers.input.cache
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.TagHelpers.output.cache
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.RazorCoreGenerate.cache
@@ -174,6 +176,12 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Countries
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Countries\_Department.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\AddImage.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\Create.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\Details.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\Edit.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\_Product.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_DeleteDialog.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -184,14 +192,6 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.RazorTarge
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.RazorTargetAssemblyInfo.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.Views.pdb
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.csproj.CopyComplete
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\staticwebassets\OnSale.Web.StaticWebAssets.Manifest.cache
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\staticwebassets\OnSale.Web.StaticWebAssets.xml
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.pdb
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\OnSale.Web.genruntimeconfig.cache
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\Create.cshtml.g.cs
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\_Product.cshtml.g.cs
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\Edit.cshtml.g.cs
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\Details.cshtml.g.cs
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\netcoreapp3.1\Razor\Views\Products\AddImage.cshtml.g.cs

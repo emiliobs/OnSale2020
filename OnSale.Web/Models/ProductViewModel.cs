@@ -4,8 +4,6 @@ using Onsale.Common.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace OnSale.Web.Models
 {
@@ -15,7 +13,7 @@ namespace OnSale.Web.Models
         [Range(1, int.MaxValue, ErrorMessage = "You must select a Category")]
         [Required]
         public int CategoryId { get; set; }
-        
+
         public IEnumerable<SelectListItem> Categories { get; set; }
 
         [Display(Name = "Image")]
