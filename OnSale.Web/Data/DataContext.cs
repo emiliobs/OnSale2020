@@ -26,8 +26,14 @@ namespace OnSale.Web.Data
             modelBuilder.Entity<Department>().HasIndex(d => d.Name).IsUnique();
             modelBuilder.Entity<City>().HasIndex(c => c.Name).IsUnique();
             modelBuilder.Entity<Product>().HasIndex(p => p.Name).IsUnique();
+            modelBuilder.Entity<Product>().Property(p => p.Price).HasColumnType("decimal(18,2");
 
 
+            base.OnModelCreating(modelBuilder);
         }
+
+
+
+
     }
 }

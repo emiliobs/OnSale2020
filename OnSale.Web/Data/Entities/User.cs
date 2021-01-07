@@ -8,6 +8,9 @@ namespace OnSale.Web.Data.Entities
 {
     public class User : IdentityUser
     {
+
+        
+
         [MaxLength(20)]
         [Required]
         public string Document { get; set; }

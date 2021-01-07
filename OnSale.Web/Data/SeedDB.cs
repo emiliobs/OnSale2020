@@ -1,4 +1,7 @@
 ﻿using Onsale.Common.Entities;
+using Onsale.Common.Enums;
+using OnSale.Web.Data.Entities;
+using OnSale.Web.Helpers;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,16 +11,55 @@ namespace OnSale.Web.Data
     public class SeedDB
     {
         private readonly DataContext _context;
+        private readonly IUserHelper _userHelper;
 
-        public SeedDB(DataContext context)
+        public SeedDB(DataContext context, IUserHelper userHelper)
         {
             _context = context;
+            this._userHelper = userHelper;
         }
 
         public async Task SeedAsync()
         {
             await _context.Database.EnsureCreatedAsync();
             await CheckCountriesAsync();
+            await CheckRolesAsync();
+            await CheckUserAsync("55555", "Emilio", "Barrera", "barrera_emilio@hotmail.com", "07907951284", "Allent Street London",
+                                  UserType.Admin);
+        }
+
+        private async Task<User> CheckUserAsync(string document, string firstName, string lastName, string email, string phone, string address,
+                                    UserType userType)
+        {
+            var user = await _userHelper.GetUserAsync(email);
+
+            if (user == null)
+            {
+                user = new User
+                {
+                    Document = document,
+                    Email = email,
+                    FirstName = firstName,
+                    LastName = lastName,
+                    Address = address,
+                    City = _context.Cities.FirstOrDefault(),
+                    UserType = userType,
+                    UserName = email,
+                    PhoneNumber = phone,
+
+                };
+
+                await _userHelper.AddUserAsync(user, "Eabs123.");
+                await _userHelper.AddUserToRoleAsync(user, userType.ToString());
+            }
+
+            return user;
+        }
+
+        private async Task CheckRolesAsync()
+        {
+            await _userHelper.CheckRoleAsync(UserType.Admin.ToString());
+            await _userHelper.CheckRoleAsync(UserType.User.ToString());
         }
 
         private async Task CheckCountriesAsync()

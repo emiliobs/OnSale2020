@@ -2,9 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using OnSale.Web.Data;
 using OnSale.Web.Data.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace OnSale.Web.Helpers
@@ -29,7 +26,7 @@ namespace OnSale.Web.Helpers
 
         public async Task AddUserToRoleAsync(User user, string roleName)
         {
-             await _userManager.AddToRoleAsync(user, roleName);
+            await _userManager.AddToRoleAsync(user, roleName);
         }
 
         public async Task CheckRoleAsync(string roleName)
@@ -40,7 +37,7 @@ namespace OnSale.Web.Helpers
             {
                 await _roleManager.CreateAsync(new IdentityRole
                 {
-                   Name = roleName,
+                    Name = roleName,
                 });
             }
         }

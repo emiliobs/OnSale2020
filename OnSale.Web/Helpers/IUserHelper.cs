@@ -1,13 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using OnSale.Web.Data.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace OnSale.Web.Helpers
 {
-   public interface IUserHelper
+    public interface IUserHelper
     {
         Task<User> GetUserAsync(string email);
 
