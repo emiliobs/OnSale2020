@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using OnSale.Web.Data;
 using OnSale.Web.Data.Entities;
+using OnSale.Web.Models;
 using System.Threading.Tasks;
 
 namespace OnSale.Web.Helpers
@@ -11,12 +12,15 @@ namespace OnSale.Web.Helpers
         private readonly DataContext _context;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
 
-        public UserHelper(DataContext context, RoleManager<IdentityRole> roleManager, UserManager<User> userManager)
+        public UserHelper(DataContext context, RoleManager<IdentityRole> roleManager, UserManager<User> userManager,
+                          SignInManager<User> signInManager)
         {
-            this._context = context;
-            this._roleManager = roleManager;
-            this._userManager = userManager;
+            _context = context;
+            _roleManager = roleManager;
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         public async Task<IdentityResult> AddUserAsync(User user, string password)
@@ -31,7 +35,7 @@ namespace OnSale.Web.Helpers
 
         public async Task CheckRoleAsync(string roleName)
         {
-            var roleExist = await _roleManager.RoleExistsAsync(roleName);
+            bool roleExist = await _roleManager.RoleExistsAsync(roleName);
 
             if (!roleExist)
             {
@@ -50,6 +54,17 @@ namespace OnSale.Web.Helpers
         public async Task<bool> IsUserInRoleAsync(User user, string roleName)
         {
             return await _userManager.IsInRoleAsync(user, roleName);
+        }
+
+        public async Task<SignInResult> LoginAsync(LoginViewModel loginViewModel)
+        {
+            return await _signInManager.PasswordSignInAsync(loginViewModel.Username, loginViewModel.Password,
+                                                             loginViewModel.RememberMe, false);
+        }
+
+        public async Task LogoutAsync()
+        {
+            await _signInManager.SignOutAsync();
         }
     }
 }
