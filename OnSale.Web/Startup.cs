@@ -44,22 +44,36 @@ namespace OnSale.Web
                 cfg.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
 
-            services.AddAuthentication(auth =>
-            {
-                auth.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                auth.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddCookie().AddJwtBearer(options =>
-            {
-                options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
-                {
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidAudience = Configuration["Tokens:Audience"],
-                    ValidIssuer = Configuration["Tokens:Issuer"],
-                    RequireExpirationTime = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Tokens:Key"])),
-                };
-            });
+
+            services.AddAuthentication()
+                    .AddCookie()
+                    .AddJwtBearer(cfg =>
+                    {
+                        cfg.TokenValidationParameters = new TokenValidationParameters
+                        {
+                            ValidIssuer = Configuration["Tokens:Issuer"],
+                            ValidAudience = Configuration["Tokens:Audience"],
+                            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Tokens:Key"]))
+                        };
+                    });
+
+
+            //services.AddAuthentication(auth =>
+            //{
+            //    auth.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            //    auth.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            //}).AddCookie().AddJwtBearer(options =>
+            //{
+            //    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+            //    {
+            //        ValidateIssuer = true,
+            //        ValidateAudience = true,
+            //        ValidAudience = Configuration["Tokens:Audience"],
+            //        ValidIssuer = Configuration["Tokens:Issuer"],
+            //        RequireExpirationTime = true,
+            //        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Tokens:Key"])),
+            //    };
+            //});
 
 
             services.AddTransient<SeedDB>();

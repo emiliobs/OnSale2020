@@ -14,10 +14,10 @@ namespace Onsale.Common.Entities
         [Display(Name = "Image")]
         public Guid ImageId { get; set; }
 
-        //TODO: Pending to put the correct paths
+
         [Display(Name = "Image")]
         public string ImageFullPath => ImageId == Guid.Empty
-            ? $"https://localhost:44372/images/noimage.jpg"
+            ? $"https://onsaleweb2021.azurewebsites.net/images/noimage.jpg"
             : $"https://onsaleemilio.blob.core.windows.net/categories/{ImageId}";
     }
 
