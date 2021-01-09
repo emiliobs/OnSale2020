@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using Onsale.Common.Request;
 using OnSale.Web.Helpers;
 using OnSale.Web.Models;
 using System;
@@ -66,6 +69,25 @@ namespace OnSale.Web.Controllers.API
             }
 
             return BadRequest();
+        }
+
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [HttpPost]
+        [Route("GetUserByEmail")]
+        public async Task<IActionResult> GetUserByEmail([FromBody] EmailRequest emailRequest)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var user = await _userHelper.GetUserAsync(emailRequest.Email);
+            if (user == null)
+            {
+                return NotFound("Error001: User there isn't Exist!");
+            }
+
+            return Ok(user);
         }
 
     }
