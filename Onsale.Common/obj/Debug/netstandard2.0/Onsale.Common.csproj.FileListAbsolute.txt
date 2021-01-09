@@ -6,4 +6,3 @@ C:\Projects4\OnSale2020\Onsale.Common\obj\Debug\netstandard2.0\Onsale.Common.Ass
 C:\Projects4\OnSale2020\Onsale.Common\obj\Debug\netstandard2.0\Onsale.Common.csproj.CoreCompileInputs.cache
 C:\Projects4\OnSale2020\Onsale.Common\obj\Debug\netstandard2.0\Onsale.Common.dll
 C:\Projects4\OnSale2020\Onsale.Common\obj\Debug\netstandard2.0\Onsale.Common.pdb
-C:\Projects4\OnSale2020\Onsale.Common\obj\Debug\netstandard2.0\Onsale.Common.csprojAssemblyReference.cache

@@ -10,8 +10,8 @@ using OnSale.Web.Data;
 namespace OnSale.Web.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210107154039_AddUser")]
-    partial class AddUser
+    [Migration("20210109211138_DeleteCascadeForCountries")]
+    partial class DeleteCascadeForCountries
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -152,6 +152,38 @@ namespace OnSale.Web.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("OnSale.Web.Data.Entities.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DateConfirmed")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DateSent")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("OrderStatus")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Remarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
+                });
+
             modelBuilder.Entity("OnSale.Web.Data.Entities.User", b =>
                 {
                     b.Property<string>("Id")
@@ -289,8 +321,9 @@ namespace OnSale.Web.Migrations
 
                     b.HasIndex("DepartmentId");
 
-                    b.HasIndex("Name")
-                        .IsUnique();
+                    b.HasIndex("Name", "DepartmentId")
+                        .IsUnique()
+                        .HasFilter("[DepartmentId] IS NOT NULL");
 
                     b.ToTable("Cities");
                 });
@@ -334,10 +367,42 @@ namespace OnSale.Web.Migrations
 
                     b.HasIndex("CountryId");
 
-                    b.HasIndex("Name")
-                        .IsUnique();
+                    b.HasIndex("Name", "CountryId")
+                        .IsUnique()
+                        .HasFilter("[CountryId] IS NOT NULL");
 
                     b.ToTable("Departments");
+                });
+
+            modelBuilder.Entity("Onsale.Common.Entities.OrdenDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int?>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int?>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<float>("Quantity")
+                        .HasColumnType("real");
+
+                    b.Property<string>("Remarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrdenDetails");
                 });
 
             modelBuilder.Entity("Onsale.Common.Entities.Product", b =>
@@ -448,6 +513,15 @@ namespace OnSale.Web.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("OnSale.Web.Data.Entities.Order", b =>
+                {
+                    b.HasOne("OnSale.Web.Data.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("OnSale.Web.Data.Entities.User", b =>
                 {
                     b.HasOne("Onsale.Common.Entities.City", "City")
@@ -459,16 +533,35 @@ namespace OnSale.Web.Migrations
 
             modelBuilder.Entity("Onsale.Common.Entities.City", b =>
                 {
-                    b.HasOne("Onsale.Common.Entities.Department", null)
+                    b.HasOne("Onsale.Common.Entities.Department", "Department")
                         .WithMany("Cities")
-                        .HasForeignKey("DepartmentId");
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("Department");
                 });
 
             modelBuilder.Entity("Onsale.Common.Entities.Department", b =>
                 {
-                    b.HasOne("Onsale.Common.Entities.Country", null)
+                    b.HasOne("Onsale.Common.Entities.Country", "Country")
                         .WithMany("Departments")
-                        .HasForeignKey("CountryId");
+                        .HasForeignKey("CountryId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("Country");
+                });
+
+            modelBuilder.Entity("Onsale.Common.Entities.OrdenDetail", b =>
+                {
+                    b.HasOne("OnSale.Web.Data.Entities.Order", null)
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("OrderId");
+
+                    b.HasOne("Onsale.Common.Entities.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("Onsale.Common.Entities.Product", b =>
@@ -485,6 +578,11 @@ namespace OnSale.Web.Migrations
                     b.HasOne("Onsale.Common.Entities.Product", null)
                         .WithMany("ProductImages")
                         .HasForeignKey("ProductId");
+                });
+
+            modelBuilder.Entity("OnSale.Web.Data.Entities.Order", b =>
+                {
+                    b.Navigation("OrderDetails");
                 });
 
             modelBuilder.Entity("Onsale.Common.Entities.Country", b =>

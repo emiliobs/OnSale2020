@@ -16,7 +16,8 @@ namespace Onsale.Common.Entities
         [NotMapped]
         public int IdDepartment { get; set; }
 
-        //public Department Department { get; set; }
+        [JsonIgnore]
+        public Department Department { get; set; }
 
     }
 }

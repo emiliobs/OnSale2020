@@ -319,8 +319,9 @@ namespace OnSale.Web.Migrations
 
                     b.HasIndex("DepartmentId");
 
-                    b.HasIndex("Name")
-                        .IsUnique();
+                    b.HasIndex("Name", "DepartmentId")
+                        .IsUnique()
+                        .HasFilter("[DepartmentId] IS NOT NULL");
 
                     b.ToTable("Cities");
                 });
@@ -364,8 +365,9 @@ namespace OnSale.Web.Migrations
 
                     b.HasIndex("CountryId");
 
-                    b.HasIndex("Name")
-                        .IsUnique();
+                    b.HasIndex("Name", "CountryId")
+                        .IsUnique()
+                        .HasFilter("[CountryId] IS NOT NULL");
 
                     b.ToTable("Departments");
                 });
@@ -529,16 +531,22 @@ namespace OnSale.Web.Migrations
 
             modelBuilder.Entity("Onsale.Common.Entities.City", b =>
                 {
-                    b.HasOne("Onsale.Common.Entities.Department", null)
+                    b.HasOne("Onsale.Common.Entities.Department", "Department")
                         .WithMany("Cities")
-                        .HasForeignKey("DepartmentId");
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("Department");
                 });
 
             modelBuilder.Entity("Onsale.Common.Entities.Department", b =>
                 {
-                    b.HasOne("Onsale.Common.Entities.Country", null)
+                    b.HasOne("Onsale.Common.Entities.Country", "Country")
                         .WithMany("Departments")
-                        .HasForeignKey("CountryId");
+                        .HasForeignKey("CountryId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("Country");
                 });
 
             modelBuilder.Entity("Onsale.Common.Entities.OrdenDetail", b =>
