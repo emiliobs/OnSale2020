@@ -18,5 +18,13 @@ namespace OnSale.Web.Models
 
         [Display(Name = "Image")]
         public IFormFile ImageFile { get; set; }
+
+        //Esta ppropiedad espara poder dar soluccion al problema que sse genera cuando se cambia la region del pc:
+        [Display(Name = "Price")]
+        [MaxLength(12)]
+        [RegularExpression(@"^\d+([\.\,]?\d+)?$", ErrorMessage = "Use only numbers and . or , to put decimals")]
+        [Required]
+        public string PriceString { get; set; }
+
     }
 }

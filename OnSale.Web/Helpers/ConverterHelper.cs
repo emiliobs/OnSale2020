@@ -2,6 +2,7 @@
 using OnSale.Web.Data;
 using OnSale.Web.Models;
 using System;
+using System.Globalization;
 using System.Threading.Tasks;
 
 namespace OnSale.Web.Helpers
@@ -49,7 +50,8 @@ namespace OnSale.Web.Helpers
                 IsStarred = model.IsStarred,
                 Name = model.Name,
                 ProductImages = model.ProductImages,
-                Price = model.Price,
+                //Price = model.Price,
+                Price = ToPrice(model.PriceString),
 
             };
         }
@@ -66,9 +68,27 @@ namespace OnSale.Web.Helpers
                 IsActive = product.IsActive,
                 IsStarred = product.IsStarred,
                 Name = product.Name,
-                Price = product.Price,
+                //Price = product.Price,
+                PriceString = $"{product.Price}",
                 ProductImages = product.ProductImages,
             };
         }
+
+        private decimal ToPrice(string priceString)
+        {
+            string nds = CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator;
+            if (nds == ".")
+            {
+                priceString = priceString.Replace(',', '.');
+
+            }
+            else
+            {
+                priceString = priceString.Replace('.', ',');
+            }
+
+            return decimal.Parse(priceString);
+        }
+
     }
 }
