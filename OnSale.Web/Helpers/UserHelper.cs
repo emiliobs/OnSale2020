@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Onsale.Common.Enums;
 using OnSale.Web.Data;
 using OnSale.Web.Data.Entities;
 using OnSale.Web.Models;
+using System;
 using System.Threading.Tasks;
 
 namespace OnSale.Web.Helpers
@@ -26,6 +28,35 @@ namespace OnSale.Web.Helpers
         public async Task<IdentityResult> AddUserAsync(User user, string password)
         {
             return await _userManager.CreateAsync(user, password);
+        }
+
+        public async Task<User> AddUserAsync(AddUserViewModel addUserViewModel, Guid imageId, UserType userType)
+        {
+            var user = new User
+            {
+                Address = addUserViewModel.Address,
+                City = await _context.Cities.FindAsync(addUserViewModel.CityId),
+                Document = addUserViewModel.Document,
+                Email = addUserViewModel.Username,
+                FirstName = addUserViewModel.FirstName,
+                LastName = addUserViewModel.LastName,
+                ImageId = imageId,
+                UserName = addUserViewModel.Username,
+                UserType =  userType,
+                PhoneNumber = addUserViewModel.PhoneNumber,
+                
+            };
+
+            var result = await _userManager.CreateAsync(user,addUserViewModel.Password);
+            if (result != IdentityResult.Success)
+            {
+                return null;
+            }
+
+            var newUser = await GetUserAsync(addUserViewModel.Username);
+            await AddUserToRoleAsync(newUser, user.UserType.ToString());
+
+            return newUser;
         }
 
         public async Task AddUserToRoleAsync(User user, string roleName)
