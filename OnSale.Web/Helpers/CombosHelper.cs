@@ -40,13 +40,51 @@ namespace OnSale.Web.Helpers
                 Value = $"{t.Id}",
             }).OrderBy(t => t.Text).ToList();
 
-            listCountries.Insert(0, new SelectListItem 
-            { 
-                Text = "[Select a Country.....]", 
-                Value = "0" 
+            listCountries.Insert(0, new SelectListItem
+            {
+                Text = "[Select a Country.....]",
+                Value = "0"
             });
 
             return listCountries;
+        }
+
+        public IEnumerable<SelectListItem> GetComboDepartments()
+        {
+            var listDepartments = _context.Departments.Select(d => new SelectListItem
+            {
+                Text = d.Name,
+                Value = $"{d.Id}"
+            }).OrderBy(d => d.Text).ToList();
+
+            listDepartments.Insert(0, new SelectListItem
+            {
+                Text = "[Select a Department.....]",
+                Value = "0",
+            });
+
+
+            return listDepartments;
+
+        }
+
+        public IEnumerable<SelectListItem> GetComboCities()
+        {
+            var listCities = _context.Cities.Select(d => new SelectListItem
+            {
+                Text = d.Name,
+                Value = $"{d.Id}"
+            }).OrderBy(d => d.Text).ToList();
+
+            listCities.Insert(0, new SelectListItem
+            {
+                Text = "[Select a City.....]",
+                Value = "0",
+            });
+
+
+            return listCities;
+
         }
 
         public IEnumerable<SelectListItem> GetComboDepartments(int contryId)
@@ -56,23 +94,23 @@ namespace OnSale.Web.Helpers
 
             if (countries != null)
             {
-                listDepartments = countries.Departments.Select(t => new SelectListItem 
+                listDepartments = countries.Departments.Select(t => new SelectListItem
                 {
-                   Text = t.Name,
-                   Value = $"{t.Id}",
+                    Text = t.Name,
+                    Value = $"{t.Id}",
                 }).OrderBy(t => t.Text).ToList();
             }
 
-            listDepartments.Insert(0, new SelectListItem 
+            listDepartments.Insert(0, new SelectListItem
             {
-                 Text = "[Select a Department.....]",
-                 Value = "0",
+                Text = "[Select a Department.....]",
+                Value = "0",
             });
 
             return listDepartments;
-          
+
         }
-        
+
         public IEnumerable<SelectListItem> GetComboCities(int departmentId)
         {
             var listCities = new List<SelectListItem>();
@@ -80,7 +118,7 @@ namespace OnSale.Web.Helpers
 
             if (department != null)
             {
-                listCities = department.Cities.Select(t => new SelectListItem 
+                listCities = department.Cities.Select(t => new SelectListItem
                 {
                     Text = t.Name,
                     Value = $"{t.Id}",
@@ -89,15 +127,15 @@ namespace OnSale.Web.Helpers
 
             listCities.Insert(0, new SelectListItem
             {
-               Text = "[Select a City.....]",
-               Value = "0",
+                Text = "[Select a City.....]",
+                Value = "0",
             });
 
             return listCities;
 
         }
 
-      
+
 
     }
 }

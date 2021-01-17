@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Onsale.Common.Entities;
 using Onsale.Common.Enums;
 using OnSale.Web.Data;
 using OnSale.Web.Helpers;
@@ -67,11 +68,16 @@ namespace OnSale.Web.Controllers
 
         public IActionResult Register()
         {
-            var model = new AddUserViewModel 
+            AddUserViewModel model = new AddUserViewModel
             {
-              Countries = _combosHelper.GetComboCountries(),
-              Departments = _combosHelper.GetComboDepartments(0),
-              Cities = _combosHelper.GetComboCities(0),
+                //Countries = _combosHelper.GetComboCountries(),
+                //Departments = _combosHelper.GetComboDepartments(0),
+                //Cities = _combosHelper.GetComboCities(0),
+
+                Countries = _combosHelper.GetComboCountries(),
+                Departments = _combosHelper.GetComboDepartments(),
+                Cities = _combosHelper.GetComboCities(),
+
             };
 
             return View(model);
@@ -83,14 +89,14 @@ namespace OnSale.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var imageId = Guid.Empty;
+                Guid imageId = Guid.Empty;
 
                 if (addUserViewModel.ImageFile != null)
                 {
-                    imageId = await _blobHelper.UploadBlobAsync(addUserViewModel.ImageFile,"user");
+                    imageId = await _blobHelper.UploadBlobAsync(addUserViewModel.ImageFile, "users");
                 }
 
-                var user = await _userHelper.AddUserAsync(addUserViewModel, imageId, UserType.User);
+                Data.Entities.User user = await _userHelper.AddUserAsync(addUserViewModel, imageId, UserType.User);
                 if (user == null)
                 {
                     ModelState.AddModelError(string.Empty, "This email is already used.");
@@ -101,17 +107,17 @@ namespace OnSale.Web.Controllers
                 }
 
                 //Here login to page with the new datas of user:
-                var loginViewModel = new LoginViewModel 
+                LoginViewModel loginViewModel = new LoginViewModel
                 {
-                   Password = addUserViewModel.Password,
-                   RememberMe = false,
-                   Username = addUserViewModel.Username,
+                    Password = addUserViewModel.Password,
+                    RememberMe = false,
+                    Username = addUserViewModel.Username,
                 };
 
-                var resulLogin = await _userHelper.LoginAsync(loginViewModel);
+                Microsoft.AspNetCore.Identity.SignInResult resulLogin = await _userHelper.LoginAsync(loginViewModel);
                 if (resulLogin.Succeeded)
                 {
-                    return RedirectToAction("Index","Home");
+                    return RedirectToAction("Index", "Home");
                 }
 
             }
@@ -130,24 +136,29 @@ namespace OnSale.Web.Controllers
         // two methods JsonResult for call ajax from the views:
         public JsonResult GetDepartments(int countryId)
         {
-            var country = _context.Countries.Include(c => c.Departments).FirstOrDefault(d => d.Id == countryId);
+            Country country = _context.Countries
+                .Include(c => c.Departments)
+                .FirstOrDefault(c => c.Id == countryId);
             if (country == null)
             {
                 return null;
             }
 
             return Json(country.Departments.OrderBy(d => d.Name));
+
         }
 
         public JsonResult GetCities(int departmentId)
         {
-            var department = _context.Departments.Include(d => d.Cities).FirstOrDefault(d => d.Id == departmentId);
+            Department department = _context.Departments
+                .Include(d => d.Cities)
+                .FirstOrDefault(d => d.Id == departmentId);
             if (department == null)
             {
                 return null;
             }
-
-            return Json(department.Cities.OrderBy(c => c.Name));
+            return Json(department.Cities.OrderBy(d => d.Name));
         }
+
     }
 }

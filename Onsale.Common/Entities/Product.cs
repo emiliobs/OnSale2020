@@ -19,7 +19,7 @@ namespace Onsale.Common.Entities
         [DisplayFormat(DataFormatString = "{0:C2}")]
         public decimal Price { get; set; }
 
-       
+
 
         [DisplayName("Is Active")]
         public bool IsActive { get; set; }

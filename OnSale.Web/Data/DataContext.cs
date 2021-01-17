@@ -32,7 +32,7 @@ namespace OnSale.Web.Data
         {
             modelBuilder.Entity<Category>().HasIndex(c => c.Name).IsUnique();
 
-            modelBuilder.Entity<Country>(con => 
+            modelBuilder.Entity<Country>(con =>
             {
                 con.HasIndex("Name").IsUnique();
                 con.HasMany(c => c.Departments).WithOne(d => d.Country).OnDelete(DeleteBehavior.Cascade);
@@ -54,7 +54,7 @@ namespace OnSale.Web.Data
             });
 
             modelBuilder.Entity<Product>().HasIndex(p => p.Name).IsUnique();
-          
+
             modelBuilder.Entity<Product>().Property(p => p.Price).HasColumnType("decimal(18,2");
 
 

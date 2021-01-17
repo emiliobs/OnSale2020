@@ -9,6 +9,10 @@ namespace OnSale.Web.Helpers
 
         IEnumerable<SelectListItem> GetComboCountries();
 
+        IEnumerable<SelectListItem> GetComboDepartments();
+
+        IEnumerable<SelectListItem> GetComboCities();
+
         IEnumerable<SelectListItem> GetComboDepartments(int contryId);
 
         IEnumerable<SelectListItem> GetComboCities(int departmentId);

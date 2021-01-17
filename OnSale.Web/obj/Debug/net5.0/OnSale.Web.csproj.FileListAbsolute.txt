@@ -200,3 +200,5 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Account\Login.cs
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Account\NotAuthorized.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Home\Error404.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Account\_User.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs

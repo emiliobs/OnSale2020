@@ -42,12 +42,12 @@ namespace OnSale.Web.Helpers
                 LastName = addUserViewModel.LastName,
                 ImageId = imageId,
                 UserName = addUserViewModel.Username,
-                UserType =  userType,
+                UserType = userType,
                 PhoneNumber = addUserViewModel.PhoneNumber,
-                
+
             };
 
-            var result = await _userManager.CreateAsync(user,addUserViewModel.Password);
+            var result = await _userManager.CreateAsync(user, addUserViewModel.Password);
             if (result != IdentityResult.Success)
             {
                 return null;
