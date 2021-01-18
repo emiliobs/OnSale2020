@@ -46,6 +46,7 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\OnSale.Web.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\OnSale.Web.runtimeconfig.json
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\OnSale.Web.pdb
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\Humanizer.dll
+C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\MailKit.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -83,7 +84,9 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\Microsoft.Visua
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\MimeKit.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\BouncyCastle.Crypto.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\SQLitePCLRaw.batteries_v2.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\SQLitePCLRaw.nativelibrary.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\SQLitePCLRaw.core.dll

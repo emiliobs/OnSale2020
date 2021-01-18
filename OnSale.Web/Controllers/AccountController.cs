@@ -22,7 +22,7 @@ namespace OnSale.Web.Controllers
         private readonly DataContext _context;
 
         public AccountController(IUserHelper userHelper, DataContext context, ICombosHelper combosHelper, IBlobHelper blobHelper,
-            IEmailHelper emailHelper)
+                                 IEmailHelper emailHelper)
         {
             _userHelper = userHelper;
             _combosHelper = combosHelper;
@@ -291,6 +291,61 @@ namespace OnSale.Web.Controllers
             return View();
         }
 
+        public IActionResult RecoverPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> RecoverPassword(RecoverPasswordViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                User user = await _userHelper.GetUserAsync(model.Email);
+                if (user == null)
+                {
+                    ModelState.AddModelError(string.Empty, "The email doesn't correspont to a registered user.");
+                    return View(model);
+                }
+
+                string myToken = await _userHelper.GeneratePasswordResetTokenAsync(user);
+                string link = Url.Action(
+                    "ResetPassword",
+                    "Account",
+                    new { token = myToken }, protocol: HttpContext.Request.Scheme);
+                _emailHelper.SendMail(model.Email, "Password Reset", $"<h1>Password Reset</h1>" +
+                    $"To reset the password click in this link: <p><a href = \"{link}\">Reset Password</a></p>");
+                ViewBag.Message = "The instructions to recover your password has been sent to email.";
+            }
+
+            return View(model);
+        }
+
+        public IActionResult ResetPassword(string token)
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
+        {
+            var user = await _userHelper.GetUserAsync(model.UserName);
+            if (user != null)
+            {
+                var result = await _userHelper.ResetPasswordAsync(user, model.Token, model.Password);
+                if (result.Succeeded)
+                {
+                    ViewBag.Message = "Password reset successful.";
+                    return View();
+                }
+
+                ViewBag.Message = "Error while resetting the Password,";
+                return View(model);
+            }
+
+            ViewBag.Message = "User Not found.";
+            return View(model);
+        }
 
         // two methods JsonResult for call ajax from the views:
         public JsonResult GetDepartments(int countryId)

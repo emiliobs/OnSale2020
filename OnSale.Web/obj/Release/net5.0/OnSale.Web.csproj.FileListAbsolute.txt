@@ -204,3 +204,7 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\Razor\Views\Account\Regist
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\Razor\Views\Account\_User.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\Razor\Views\Home\Error404.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\Razor\Views\Account\ChangePassword.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\bin\Release\net5.0\MailKit.dll
+C:\Projects4\OnSale2020\OnSale.Web\bin\Release\net5.0\MimeKit.dll
+C:\Projects4\OnSale2020\OnSale.Web\bin\Release\net5.0\BouncyCastle.Crypto.dll
+C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\Razor\Views\Account\ConfirmEmail.cshtml.g.cs
