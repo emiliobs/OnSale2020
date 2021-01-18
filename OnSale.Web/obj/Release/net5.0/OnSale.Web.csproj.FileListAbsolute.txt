@@ -203,3 +203,4 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\Razor\Views\Account\NotAut
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\Razor\Views\Account\Register.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\Razor\Views\Account\_User.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\Razor\Views\Home\Error404.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\Razor\Views\Account\ChangePassword.cshtml.g.cs
