@@ -37,7 +37,7 @@ namespace OnSale.Web.Models
         [Display(Name = "Image")]
         public string ImageFullPath => ImageId == Guid.Empty
             ? $"https://onsaleweb2021.azurewebsites.net/images/noimage.png"
-            : $"https://onsaleweb2021.azurewebsites.net/users/{ImageId}";
+            : $"https://onsaleemilio.blob.core.windows.net/users/{ImageId}";
 
         [Display(Name = "Image")]
         public IFormFile ImageFile { get; set; }

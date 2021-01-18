@@ -1,7 +1,9 @@
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\OnSale.Web.exe
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\css\site.css
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\favicon.ico
+C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\images\404.png
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\images\noimage.jpg
+C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\images\notauthorized.jpg
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\js\deleteDialog.js
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\js\site.js
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css

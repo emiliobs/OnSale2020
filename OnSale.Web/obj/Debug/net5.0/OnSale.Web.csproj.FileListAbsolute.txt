@@ -11,6 +11,7 @@ C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\net5.0\OnSale.Web.pdb
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\net5.0\OnSale.Web.Views.dll
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\net5.0\OnSale.Web.Views.pdb
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\net5.0\Humanizer.dll
+C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -158,6 +159,11 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\scopedcss\bundle\OnSale.Web.
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\OnSale.Web.TagHelpers.input.cache
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\OnSale.Web.TagHelpers.output.cache
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\OnSale.Web.RazorCoreGenerate.cache
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Account\ChangeUser.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Account\NotAuthorized.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Account\_User.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Categories\Create.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Categories\Edit.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Categories\Index.cshtml.g.cs
@@ -174,6 +180,7 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Countries\Index.
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Countries\_city.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Countries\_Country.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Countries\_Department.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Home\Error404.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Products\AddImage.cshtml.g.cs
@@ -196,9 +203,3 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\OnSale.Web.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\ref\OnSale.Web.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\OnSale.Web.pdb
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\OnSale.Web.genruntimeconfig.cache
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
-C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Account\NotAuthorized.cshtml.g.cs
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Home\Error404.cshtml.g.cs
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Account\_User.cshtml.g.cs
-C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs

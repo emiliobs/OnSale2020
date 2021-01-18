@@ -198,3 +198,8 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\OnSale.Web.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\ref\OnSale.Web.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\OnSale.Web.pdb
 C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\OnSale.Web.genruntimeconfig.cache
+C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\Razor\Views\Account\ChangeUser.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\Razor\Views\Account\NotAuthorized.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\Razor\Views\Account\_User.cshtml.g.cs
+C:\Projects4\OnSale2020\OnSale.Web\obj\Release\net5.0\Razor\Views\Home\Error404.cshtml.g.cs
