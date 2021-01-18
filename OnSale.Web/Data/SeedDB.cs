@@ -51,6 +51,10 @@ namespace OnSale.Web.Data
 
                 await _userHelper.AddUserAsync(user, "Eabs123.");
                 await _userHelper.AddUserToRoleAsync(user, userType.ToString());
+
+                //Aqui confirmo el usuario creado con token(este por que es el superusuario)
+                var token = await _userHelper.GenerateEmailConfirmationTokenAsync(user);
+                await _userHelper.ConfirmEmailAsync(user, token);
             }
 
             return user;
