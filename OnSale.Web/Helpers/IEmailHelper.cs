@@ -1,4 +1,4 @@
-﻿using Onsale.Common.Response;
+﻿using Onsale.Common.Responses;
 
 namespace OnSale.Web.Helpers
 {

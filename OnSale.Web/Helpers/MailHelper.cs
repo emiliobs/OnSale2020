@@ -1,7 +1,7 @@
 ﻿using MailKit.Net.Smtp;
 using Microsoft.Extensions.Configuration;
 using MimeKit;
-using Onsale.Common.Response;
+using Onsale.Common.Responses;
 using System;
 
 namespace OnSale.Web.Helpers

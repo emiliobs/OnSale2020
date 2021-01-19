@@ -1,0 +1,12 @@
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\bin\Debug\netstandard2.0\OnSale.Prism.deps.json
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\bin\Debug\netstandard2.0\OnSale.Prism.dll
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\bin\Debug\netstandard2.0\OnSale.Prism.pdb
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.0\OnSale.Prism.csprojAssemblyReference.cache
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.0\OnSale.Prism.AssemblyInfoInputs.cache
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.0\OnSale.Prism.AssemblyInfo.cs
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.0\OnSale.Prism.csproj.CoreCompileInputs.cache
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.0\OnSale.Prism.dll
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.0\OnSale.Prism.pdb

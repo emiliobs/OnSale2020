@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Onsale.Common.Entities;
 using Onsale.Common.Enums;
-using Onsale.Common.Response;
+using Onsale.Common.Responses;
 using OnSale.Web.Data;
 using OnSale.Web.Data.Entities;
 using OnSale.Web.Helpers;
