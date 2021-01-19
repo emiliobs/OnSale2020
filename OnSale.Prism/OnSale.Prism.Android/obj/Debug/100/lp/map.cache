@@ -1,6 +1,9 @@
 FFImageLoading.Forms.Platform
 FFImageLoading.Platform
 FormsViewGroup
+Syncfusion.Core.XForms.Android
+Syncfusion.SfBusyIndicator.Android
+Syncfusion.SfBusyIndicator.XForms.Android
 Xamarin.AndroidX.Activity
 Xamarin.AndroidX.Annotation
 Xamarin.AndroidX.AppCompat.AppCompatResources

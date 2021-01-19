@@ -129,6 +129,10 @@
               "target": "Package",
               "version": "[8.0.0.1909, )"
             },
+            "Syncfusion.Xamarin.SfBusyIndicator": {
+              "target": "Package",
+              "version": "[18.4.0.35, )"
+            },
             "Xamarin.Essentials.Interfaces": {
               "target": "Package",
               "version": "[1.6.1-preview1, )"
