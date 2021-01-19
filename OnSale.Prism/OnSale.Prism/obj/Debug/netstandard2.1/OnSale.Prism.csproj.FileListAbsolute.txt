@@ -13,3 +13,4 @@ C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.1\OnSal
 C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\bin\Debug\netstandard2.1\Onsale.Common.dll
 C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\bin\Debug\netstandard2.1\Onsale.Common.pdb
 C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.1\OnSale.Prism.csproj.CopyComplete
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.1\Views\ProductsPage.xaml.g.cs

@@ -3,7 +3,6 @@ using Onsale.Common.Responses;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Onsale.Common.Services
@@ -29,7 +28,7 @@ namespace Onsale.Common.Services
                     {
                         IsSuccess = false,
                         Message = result,
-                        
+
                     };
                 }
 

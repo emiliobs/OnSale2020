@@ -10,3 +10,7 @@ C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.0\OnSal
 C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.0\OnSale.Prism.dll
 C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.0\OnSale.Prism.pdb
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\bin\Debug\netstandard2.0\Onsale.Common.dll
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\bin\Debug\netstandard2.0\Onsale.Common.pdb
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.0\Views\ProductsPage.xaml.g.cs
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism\obj\Debug\netstandard2.0\OnSale.Prism.csproj.CopyComplete
