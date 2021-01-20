@@ -133,6 +133,10 @@
               "target": "Package",
               "version": "[18.4.0.35, )"
             },
+            "Syncfusion.Xamarin.SfRotator": {
+              "target": "Package",
+              "version": "[18.4.0.35, )"
+            },
             "Xamarin.Essentials.Interfaces": {
               "target": "Package",
               "version": "[1.6.1-preview1, )"

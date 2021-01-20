@@ -99,6 +99,23 @@
           "lib/Xamarin.iOS10/Syncfusion.SfBusyIndicator.iOS.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfRotator/18.4.0.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.4.0.35",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.iOS.dll": {}
+        }
+      },
       "System.ComponentModel.Annotations/5.0.0": {
         "type": "package",
         "compile": {
@@ -337,6 +354,7 @@
           "Onsale.Common": "1.0.0",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "Syncfusion.Xamarin.SfBusyIndicator": "18.4.0.35",
+          "Syncfusion.Xamarin.SfRotator": "18.4.0.35",
           "Xamarin.Essentials.Interfaces": "1.6.1-preview1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.1874"
@@ -447,6 +465,23 @@
           "lib/Xamarin.iOS10/Syncfusion.SfBusyIndicator.iOS.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfRotator/18.4.0.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.4.0.35",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.iOS.dll": {}
+        }
+      },
       "System.ComponentModel.Annotations/5.0.0": {
         "type": "package",
         "compile": {
@@ -685,6 +720,7 @@
           "Onsale.Common": "1.0.0",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "Syncfusion.Xamarin.SfBusyIndicator": "18.4.0.35",
+          "Syncfusion.Xamarin.SfRotator": "18.4.0.35",
           "Xamarin.Essentials.Interfaces": "1.6.1-preview1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.1874"
@@ -795,6 +831,23 @@
           "lib/Xamarin.iOS10/Syncfusion.SfBusyIndicator.iOS.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfRotator/18.4.0.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.4.0.35",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.iOS.dll": {}
+        }
+      },
       "System.ComponentModel.Annotations/5.0.0": {
         "type": "package",
         "compile": {
@@ -1033,6 +1086,7 @@
           "Onsale.Common": "1.0.0",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "Syncfusion.Xamarin.SfBusyIndicator": "18.4.0.35",
+          "Syncfusion.Xamarin.SfRotator": "18.4.0.35",
           "Xamarin.Essentials.Interfaces": "1.6.1-preview1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.1874"
@@ -1143,6 +1197,23 @@
           "lib/Xamarin.iOS10/Syncfusion.SfBusyIndicator.iOS.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfRotator/18.4.0.35": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "18.4.0.35",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRotator.iOS.dll": {}
+        }
+      },
       "System.ComponentModel.Annotations/5.0.0": {
         "type": "package",
         "compile": {
@@ -1381,6 +1452,7 @@
           "Onsale.Common": "1.0.0",
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "Syncfusion.Xamarin.SfBusyIndicator": "18.4.0.35",
+          "Syncfusion.Xamarin.SfRotator": "18.4.0.35",
           "Xamarin.Essentials.Interfaces": "1.6.1-preview1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.1874"
@@ -1610,6 +1682,40 @@
         "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.xml",
         "syncfusion.xamarin.sfbusyindicator.18.4.0.35.nupkg.sha512",
         "syncfusion.xamarin.sfbusyindicator.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfRotator/18.4.0.35": {
+      "sha512": "g+fLHbrW1+3n6Xa82w5IELkJqju9+1MYGUXWKTCcDOfoXqAczIXVKBkXMswkz3i0A0IY3E7JIgQ5CACqw1vQiw==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfrotator/18.4.0.35",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10.0/Syncfusion.SfRotator.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfRotator.Android.xml",
+        "lib/MonoAndroid10.0/Syncfusion.SfRotator.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfRotator.XForms.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfRotator.XForms.xml",
+        "lib/MonoAndroid90/Syncfusion.SfRotator.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.SfRotator.Android.xml",
+        "lib/MonoAndroid90/Syncfusion.SfRotator.XForms.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.SfRotator.XForms.dll",
+        "lib/MonoAndroid90/Syncfusion.SfRotator.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfRotator.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfRotator.iOS.xml",
+        "lib/netstandard2.0/Syncfusion.SfRotator.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfRotator.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfRotator.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfRotator.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfRotator.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfRotator.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfRotator.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfRotator.XForms.xml",
+        "syncfusion.xamarin.sfrotator.18.4.0.35.nupkg.sha512",
+        "syncfusion.xamarin.sfrotator.nuspec"
       ]
     },
     "System.ComponentModel.Annotations/5.0.0": {
@@ -2214,6 +2320,7 @@
       "OnSale.Prism >= 1.0.0",
       "Prism.DryIoc.Forms >= 8.0.0.1909",
       "Syncfusion.Xamarin.SfBusyIndicator >= 18.4.0.35",
+      "Syncfusion.Xamarin.SfRotator >= 18.4.0.35",
       "Xamarin.Essentials.Interfaces >= 1.6.1-preview1",
       "Xamarin.FFImageLoading.Forms >= 2.4.11.982",
       "Xamarin.Forms >= 5.0.0.1874"
@@ -2266,6 +2373,10 @@
             "version": "[8.0.0.1909, )"
           },
           "Syncfusion.Xamarin.SfBusyIndicator": {
+            "target": "Package",
+            "version": "[18.4.0.35, )"
+          },
+          "Syncfusion.Xamarin.SfRotator": {
             "target": "Package",
             "version": "[18.4.0.35, )"
           },

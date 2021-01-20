@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aRpayGw6Z454b3Yr8wyuvL3afhzgictCHXiJEbjAJi2xH3PjUUXO7ksDd1ne8RybLdmYIQsvMg01TKWAJehL6Q==",
+  "dgSpecHash": "0TZhIxM8c3MtZwr8TROr3R6wK3s7LFij7Zol45Py2PIUo0Wzbq9escSQc+OyXITZuDBaXeuD+pvYnQxSk1JIrw==",
   "success": true,
   "projectFilePath": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism.Android\\OnSale.Prism.Android.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\Emilio\\.nuget\\packages\\syncfusion.licensing\\18.4.0.35\\syncfusion.licensing.18.4.0.35.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\syncfusion.xamarin.core\\18.4.0.35\\syncfusion.xamarin.core.18.4.0.35.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\syncfusion.xamarin.sfbusyindicator\\18.4.0.35\\syncfusion.xamarin.sfbusyindicator.18.4.0.35.nupkg.sha512",
+    "C:\\Users\\Emilio\\.nuget\\packages\\syncfusion.xamarin.sfrotator\\18.4.0.35\\syncfusion.xamarin.sfrotator.18.4.0.35.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
