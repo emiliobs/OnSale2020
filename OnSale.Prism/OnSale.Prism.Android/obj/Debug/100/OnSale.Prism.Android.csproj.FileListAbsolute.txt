@@ -725,3 +725,5 @@ C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism.Android\obj\Debug\100\android\
 C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism.Android\obj\Debug\100\android\src\crc64bc5fa566a7b37c7d\SfRotatorItem.java
 C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism.Android\obj\Debug\100\android\src\crc64bc5fa566a7b37c7d\TabStrip.java
 C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism.Android\obj\Debug\100\android\src\crc64bc5fa566a7b37c7d\ThumbnailStrip.java
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism.Android\bin\Debug\es\OnSale.Prism.resources.dll
+C:\Projects4\OnSale2020\OnSale.Prism\OnSale.Prism.Android\bin\Debug\fr\OnSale.Prism.resources.dll

@@ -211,3 +211,6 @@ C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\OnSale.Web.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\ref\OnSale.Web.dll
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\OnSale.Web.pdb
 C:\Projects4\OnSale2020\OnSale.Web\obj\Debug\net5.0\OnSale.Web.genruntimeconfig.cache
+C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\net5.0\Xamarin.Forms.Core.dll
+C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\net5.0\Xamarin.Forms.Platform.dll
+C:\Projects4\OnSale2020\OnSale.Web\bin\Debug\net5.0\Xamarin.Forms.Xaml.dll

@@ -70,11 +70,12 @@
     <PackageReference Include="Xamarin.FFImageLoading.Forms">
       <Version>2.4.11.982</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.1874" />
-    <PackageReference Include="Xamarin.Essentials.Interfaces" Version="1.6.1-preview1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.1905" />
+    <PackageReference Include="Xamarin.Essentials.Interfaces" Version="1.6.1-preview2" />
     <PackageReference Include="Prism.DryIoc.Forms" Version="8.0.0.1909" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Implementations\Localize.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="SplashActivity.cs" />
@@ -116,6 +117,10 @@
     <AndroidResource Include="Resources\values\strings.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Onsale.Common\Onsale.Common.csproj">
+      <Project>{23902582-c20a-4d5c-8c1d-bb3759eb8e9f}</Project>
+      <Name>Onsale.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OnSale.Prism\OnSale.Prism.csproj">
       <Project>{A682884C-CB44-4A89-B752-27BB634E0ABE}</Project>
       <Name>OnSale.Prism</Name>
@@ -139,6 +144,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_more_vert.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>

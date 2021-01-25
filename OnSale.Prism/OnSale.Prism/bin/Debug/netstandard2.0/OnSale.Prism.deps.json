@@ -14,12 +14,20 @@
           "Prism.DryIoc.Forms": "8.0.0.1909",
           "Syncfusion.Xamarin.SfBusyIndicator": "18.4.0.35",
           "Syncfusion.Xamarin.SfRotator": "18.4.0.35",
-          "Xamarin.Essentials.Interfaces": "1.6.1-preview1",
+          "Xamarin.Essentials.Interfaces": "1.6.1-preview2",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
-          "Xamarin.Forms": "5.0.0.1874"
+          "Xamarin.Forms": "5.0.0.1905"
         },
         "runtime": {
           "OnSale.Prism.dll": {}
+        },
+        "resources": {
+          "es/OnSale.Prism.resources.dll": {
+            "locale": "es"
+          },
+          "fr/OnSale.Prism.resources.dll": {
+            "locale": "fr"
+          }
         }
       },
       "DryIoc.dll/4.5.0": {
@@ -71,7 +79,7 @@
       "Prism.Forms/8.0.0.1909": {
         "dependencies": {
           "Prism.Core": "8.0.0.1909",
-          "Xamarin.Forms": "5.0.0.1874"
+          "Xamarin.Forms": "5.0.0.1905"
         },
         "runtime": {
           "lib/netstandard2.0/Prism.Forms.dll": {
@@ -91,7 +99,7 @@
       "Syncfusion.Xamarin.Core/18.4.0.35": {
         "dependencies": {
           "Syncfusion.Licensing": "18.4.0.35",
-          "Xamarin.Forms": "5.0.0.1874"
+          "Xamarin.Forms": "5.0.0.1905"
         },
         "runtime": {
           "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {
@@ -103,7 +111,7 @@
       "Syncfusion.Xamarin.SfBusyIndicator/18.4.0.35": {
         "dependencies": {
           "Syncfusion.Xamarin.Core": "18.4.0.35",
-          "Xamarin.Forms": "5.0.0.1874"
+          "Xamarin.Forms": "5.0.0.1905"
         },
         "runtime": {
           "lib/netstandard2.0/Syncfusion.SfBusyIndicator.XForms.dll": {
@@ -115,7 +123,7 @@
       "Syncfusion.Xamarin.SfRotator/18.4.0.35": {
         "dependencies": {
           "Syncfusion.Xamarin.Core": "18.4.0.35",
-          "Xamarin.Forms": "5.0.0.1874"
+          "Xamarin.Forms": "5.0.0.1905"
         },
         "runtime": {
           "lib/netstandard2.0/Syncfusion.SfRotator.XForms.dll": {
@@ -212,7 +220,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "Xamarin.Essentials/1.6.1-preview1": {
+      "Xamarin.Essentials/1.6.1-preview2": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
@@ -223,9 +231,9 @@
           }
         }
       },
-      "Xamarin.Essentials.Interfaces/1.6.1-preview1": {
+      "Xamarin.Essentials.Interfaces/1.6.1-preview2": {
         "dependencies": {
-          "Xamarin.Essentials": "1.6.1-preview1"
+          "Xamarin.Essentials": "1.6.1-preview2"
         },
         "runtime": {
           "lib/netstandard2.0/Essential.Interfaces.dll": {
@@ -249,7 +257,7 @@
       "Xamarin.FFImageLoading.Forms/2.4.11.982": {
         "dependencies": {
           "Xamarin.FFImageLoading": "2.4.11.982",
-          "Xamarin.Forms": "5.0.0.1874"
+          "Xamarin.Forms": "5.0.0.1905"
         },
         "runtime": {
           "lib/netstandard1.0/FFImageLoading.Forms.dll": {
@@ -258,26 +266,27 @@
           }
         }
       },
-      "Xamarin.Forms/5.0.0.1874": {
+      "Xamarin.Forms/5.0.0.1905": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.582"
+            "fileVersion": "5.0.0.599"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.582"
+            "fileVersion": "5.0.0.599"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.582"
+            "fileVersion": "5.0.0.599"
           }
         }
       },
       "Onsale.Common/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
-          "System.ComponentModel.Annotations": "5.0.0"
+          "System.ComponentModel.Annotations": "5.0.0",
+          "Xamarin.Forms": "5.0.0.1905"
         },
         "runtime": {
           "Onsale.Common.dll": {}
@@ -445,19 +454,19 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "Xamarin.Essentials/1.6.1-preview1": {
+    "Xamarin.Essentials/1.6.1-preview2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5d31UJzgmGxP41i0FKQmVhEBRPALGds3HRBL3wJeQx/xGa9uDWoPIlS1jky+jL5TQ49+jkCg1IbDjb9Bo/C9NQ==",
-      "path": "xamarin.essentials/1.6.1-preview1",
-      "hashPath": "xamarin.essentials.1.6.1-preview1.nupkg.sha512"
+      "sha512": "sha512-TCmTzDxtI2xDsDzLn84wD8DvLGYzqwHG16Z34hTZEAnvTqNUBvLXSiECil1c6WAJ9lH+YbuyC6gIj6/GA/UNwg==",
+      "path": "xamarin.essentials/1.6.1-preview2",
+      "hashPath": "xamarin.essentials.1.6.1-preview2.nupkg.sha512"
     },
-    "Xamarin.Essentials.Interfaces/1.6.1-preview1": {
+    "Xamarin.Essentials.Interfaces/1.6.1-preview2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jUh2OfVFeRHh6eEjVN94Lu/dn7+Vd6coN/Ps8s5H/i7ofSIBCRUB3HWULnnn2At7tOhD7+RCirhPDnW7fwwYxQ==",
-      "path": "xamarin.essentials.interfaces/1.6.1-preview1",
-      "hashPath": "xamarin.essentials.interfaces.1.6.1-preview1.nupkg.sha512"
+      "sha512": "sha512-9mjnPPcXELOeaUB8/IT6wa2BOp11pCN4h6kY9e56BdGQQpkGjD/iGs36iRKjBrRCtjmDHFau0PJBPKeiWjpRQQ==",
+      "path": "xamarin.essentials.interfaces/1.6.1-preview2",
+      "hashPath": "xamarin.essentials.interfaces.1.6.1-preview2.nupkg.sha512"
     },
     "Xamarin.FFImageLoading/2.4.11.982": {
       "type": "package",
@@ -473,12 +482,12 @@
       "path": "xamarin.ffimageloading.forms/2.4.11.982",
       "hashPath": "xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512"
     },
-    "Xamarin.Forms/5.0.0.1874": {
+    "Xamarin.Forms/5.0.0.1905": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-DddatpRCi4WvM4pBuDfRtKr/KkhFZoVE1KLNFwbOfltVUecqf78y8VaIDDU/iddfNfMSSzoqDBWpZgNj6lFyxA==",
-      "path": "xamarin.forms/5.0.0.1874",
-      "hashPath": "xamarin.forms.5.0.0.1874.nupkg.sha512"
+      "sha512": "sha512-0Kqs6vbNVdwFKd8RINMBqNziP0MYYPuko8LuyxVgAQ/wkrWh16Wl/8PFy10ykELF7bGwl0uKG7jJghQ7dh02ig==",
+      "path": "xamarin.forms/5.0.0.1905",
+      "hashPath": "xamarin.forms.5.0.0.1905.nupkg.sha512"
     },
     "Onsale.Common/1.0.0": {
       "type": "project",

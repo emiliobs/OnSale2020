@@ -3,7 +3,6 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "OnSale.Prism.Android.dll" comes first in this list. */
 		"OnSale.Prism.Android.dll",
-		"Onsale.Common.dll",
 		"DryIoc.dll",
 		"Essential.Interfaces.dll",
 		"FFImageLoading.dll",
@@ -12,6 +11,7 @@ public class MonoPackageManager_Resources {
 		"FFImageLoading.Platform.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
+		"Onsale.Common.dll",
 		"OnSale.Prism.dll",
 		"Prism.dll",
 		"Prism.DryIoc.Forms.dll",

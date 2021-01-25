@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "zSWSQr4NEew7DYoaxfTggXt1krEDxgBIK8zT9MRPwkve4kXO6oua0J9gIxBMcO6XOL5q40nitZ8eZ//tuo8GMw==",
+  "dgSpecHash": "8cHX8XixeauXXL95TOQFoLzHV+sxACk5tv9m8oJwdnu/6l154jQ/rSDtZbbY50Woh4O6KzoCdyErshV/jCk+cw==",
   "success": true,
   "projectFilePath": "C:\\Projects4\\OnSale2020\\Onsale.Common\\Onsale.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\Emilio\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\Emilio\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.forms\\5.0.0.1905\\xamarin.forms.5.0.0.1905.nupkg.sha512"
   ],
   "logs": []
 }

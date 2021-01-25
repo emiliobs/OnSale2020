@@ -58,6 +58,10 @@
             "System.ComponentModel.Annotations": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.1905, )"
             }
           },
           "imports": [
@@ -139,7 +143,7 @@
             },
             "Xamarin.Essentials.Interfaces": {
               "target": "Package",
-              "version": "[1.6.1-preview1, )"
+              "version": "[1.6.1-preview2, )"
             },
             "Xamarin.FFImageLoading.Forms": {
               "target": "Package",
@@ -147,7 +151,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.1874, )"
+              "version": "[5.0.0.1905, )"
             }
           },
           "imports": [

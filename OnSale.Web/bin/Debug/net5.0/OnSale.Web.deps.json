@@ -2434,10 +2434,32 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "Xamarin.Forms/5.0.0.1905": {
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "5.0.0.599"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "5.0.0.599"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "5.0.0.599"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {},
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {}
+        }
+      },
       "Onsale.Common/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
-          "System.ComponentModel.Annotations": "5.0.0"
+          "System.ComponentModel.Annotations": "5.0.0",
+          "Xamarin.Forms": "5.0.0.1905"
         },
         "runtime": {
           "Onsale.Common.dll": {}
@@ -5361,6 +5383,13 @@
       "sha512": "sha512-VUV8j6dzkU/7vDgk5k+ob5g7nnch2fNByr0p9aOxMGFGk+tAnTehrZ4qnClF04CVozP1GNN2zrnbsxCmr+iZBg==",
       "path": "windowsazure.storage/9.3.3",
       "hashPath": "windowsazure.storage.9.3.3.nupkg.sha512"
+    },
+    "Xamarin.Forms/5.0.0.1905": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0Kqs6vbNVdwFKd8RINMBqNziP0MYYPuko8LuyxVgAQ/wkrWh16Wl/8PFy10ykELF7bGwl0uKG7jJghQ7dh02ig==",
+      "path": "xamarin.forms/5.0.0.1905",
+      "hashPath": "xamarin.forms.5.0.0.1905.nupkg.sha512"
     },
     "Onsale.Common/1.0.0": {
       "type": "project",

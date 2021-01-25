@@ -21,11 +21,11 @@ namespace OnSale.Prism.ItemViewModel
         private async void SelectProductAsync()
         {
             //pass parameter: of a page to anothe page:
-            var parameters = new NavigationParameters 
+            var parameters = new NavigationParameters
             {
                 { "product", this }
             };
-            await _navigationService.NavigateAsync(nameof(ProductDetailPage),parameters);
+            await _navigationService.NavigateAsync(nameof(ProductDetailPage), parameters);
         }
     }
 }

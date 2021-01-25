@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0TZhIxM8c3MtZwr8TROr3R6wK3s7LFij7Zol45Py2PIUo0Wzbq9escSQc+OyXITZuDBaXeuD+pvYnQxSk1JIrw==",
+  "dgSpecHash": "AX7PpfekbhiEkIbjx182vOfuCJl9bI56OpEw8O//zt205fMHR9DMUzGDPHx1Td6/hPkvx8AE6tlGob1hLY19FA==",
   "success": true,
   "projectFilePath": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism.Android\\OnSale.Prism.Android.csproj",
   "expectedPackageFiles": [
@@ -59,11 +59,11 @@
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.androidx.versionedparcelable\\1.1.1.6\\xamarin.androidx.versionedparcelable.1.1.1.6.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.androidx.viewpager\\1.0.0.6\\xamarin.androidx.viewpager.1.0.0.6.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.androidx.viewpager2\\1.0.0.7\\xamarin.androidx.viewpager2.1.0.0.7.nupkg.sha512",
-    "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.essentials\\1.6.1-preview1\\xamarin.essentials.1.6.1-preview1.nupkg.sha512",
-    "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.essentials.interfaces\\1.6.1-preview1\\xamarin.essentials.interfaces.1.6.1-preview1.nupkg.sha512",
+    "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.essentials\\1.6.1-preview2\\xamarin.essentials.1.6.1-preview2.nupkg.sha512",
+    "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.essentials.interfaces\\1.6.1-preview2\\xamarin.essentials.interfaces.1.6.1-preview2.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
-    "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.forms\\5.0.0.1874\\xamarin.forms.5.0.0.1874.nupkg.sha512",
+    "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.forms\\5.0.0.1905\\xamarin.forms.5.0.0.1905.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.google.android.material\\1.1.0.5\\xamarin.google.android.material.1.1.0.5.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],

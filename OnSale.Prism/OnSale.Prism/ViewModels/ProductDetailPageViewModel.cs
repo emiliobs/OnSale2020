@@ -24,10 +24,11 @@ namespace OnSale.Prism.ViewModels
         }
 
 
-        public Product Product 
+        public Product Product
         {
-            get => _product; 
-            set => SetProperty(ref _product, value); }
+            get => _product;
+            set => SetProperty(ref _product, value);
+        }
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {

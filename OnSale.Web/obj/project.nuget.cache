@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jykrV93m6+sHdXw/vyJV8ZkpweFDpKCW8ahhZG3E0gSW4XHVoQhUhaGVcaZi3qav71hCVhT9myQgfU/qC15PIg==",
+  "dgSpecHash": "Dt5ClXgPKK9ltXaMYZtZOXgjkXdRoIOAZh9jlFIWJxkZ2OePBQ07/6IPdzXy+DhfkZrDDETeUDJ0rcjG5FdbZA==",
   "success": true,
   "projectFilePath": "C:\\Projects4\\OnSale2020\\OnSale.Web\\OnSale.Web.csproj",
   "expectedPackageFiles": [
@@ -181,7 +181,8 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\Emilio\\.nuget\\packages\\windowsazure.storage\\9.3.3\\windowsazure.storage.9.3.3.nupkg.sha512"
+    "C:\\Users\\Emilio\\.nuget\\packages\\windowsazure.storage\\9.3.3\\windowsazure.storage.9.3.3.nupkg.sha512",
+    "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.forms\\5.0.0.1905\\xamarin.forms.5.0.0.1905.nupkg.sha512"
   ],
   "logs": []
 }

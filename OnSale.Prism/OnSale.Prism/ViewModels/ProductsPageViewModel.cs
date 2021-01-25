@@ -1,4 +1,5 @@
 ﻿using Onsale.Common.Entities;
+using Onsale.Common.Helpers;
 using Onsale.Common.Responses;
 using Onsale.Common.Services;
 using OnSale.Prism.ItemViewModel;
@@ -57,20 +58,21 @@ namespace OnSale.Prism.ViewModels
 
         private async void LoadProductAsync()
         {
+
+
             //Internet Connection try
             if (Connectivity.NetworkAccess != NetworkAccess.Internet)
             {
-                await App.Current.MainPage.DisplayAlert("Error", "Check the Internet Connection.", "Accept");
+                await App.Current.MainPage.DisplayAlert(Languages.Error, Languages.ConnectionError, Languages.Accept);
                 return;
             }
 
             IsRunning = true;
-
             string urlApi = App.Current.Resources["UrlAPI"].ToString();
             Response response = await _apiService.GetListAsync<Product>(urlApi, "/api", "/Products");
             if (!response.IsSuccess)
             {
-                await App.Current.MainPage.DisplayAlert("Error", response.Message, "Accept");
+                await App.Current.MainPage.DisplayAlert(Languages.Error, response.Message, Languages.Accept);
                 return;
             }
 
@@ -78,6 +80,7 @@ namespace OnSale.Prism.ViewModels
             ShowProducts();
 
             IsRunning = false;
+
 
         }
 
