@@ -4,5 +4,6 @@
     <SelectedDevice>Xiaomi Mi A2</SelectedDevice>
     <ProjectView>ProjectFiles</ProjectView>
     <DefaultDevice>pixel_2_pie_9_0_api_28</DefaultDevice>
+    <ActiveDebugProfile>Xiaomi Mi A2</ActiveDebugProfile>
   </PropertyGroup>
 </Project>

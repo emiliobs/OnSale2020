@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7zZEt7tkzanzYR7W3hIjWsXnGKpKjMJ8SnS7ssUuivAeAqvQ/8zhEHahrt89cQN82YMxcSBOhiC2j7tuYS/Xmw==",
+  "dgSpecHash": "NrORUIzEHl/MB2yC1+PRHFsG/PHC2ayfi5UIFbZrJl6esbU7v/n8lUHIIKQefG0zhFxxRyn6egr9BAXSztU0lQ==",
   "success": true,
   "projectFilePath": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj",
   "expectedPackageFiles": [
@@ -30,7 +30,7 @@
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.essentials.interfaces\\1.6.1-preview2\\xamarin.essentials.interfaces.1.6.1-preview2.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
-    "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.forms\\5.0.0.1905\\xamarin.forms.5.0.0.1905.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []
 }

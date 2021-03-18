@@ -5,6 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"  
+             xmlns:i18n="clr-namespace:OnSale.Prism.Helpers"
              x:Class="OnSale.Prism.Views.ProductDetailPage"
              Title="{Binding Title}">
 
@@ -51,7 +52,7 @@
                            Text="Name"/>
                     <Label Grid.Row="0"
                            Grid.Column="1"
-                           Text="{Binding Product.Name}"/>
+                           Text="Name"/>
                     <Label Grid.Row="1"
                            Grid.Column="0"
                            FontAttributes="Bold"
@@ -89,7 +90,7 @@
         <Button BackgroundColor="Navy"
                 Command="{Binding AddToCartBinding}" 
                 CornerRadius="10"
-                Text="Add to Cart"
+                Text="Add To Cart"
                 TextColor="White"
                 VerticalOptions="EndAndExpand"/>
     </StackLayout>

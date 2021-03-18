@@ -24,9 +24,9 @@ namespace OnSale.Prism.ViewModels
 
         public ProductsPageViewModel(INavigationService navigationService, IApiService apiService) : base(navigationService)
         {
-            this._navigationService = navigationService;
+            _navigationService = navigationService;
             _apiService = apiService;
-            Title = "Products";
+            Title = Languages.Products;
             LoadProductAsync();
 
         }
@@ -40,8 +40,8 @@ namespace OnSale.Prism.ViewModels
 
         public bool IsRunning
         {
-            get { return _isRunning; }
-            set { SetProperty(ref _isRunning, value); }
+            get => _isRunning;
+            set => SetProperty(ref _isRunning, value);
         }
 
         public string Search

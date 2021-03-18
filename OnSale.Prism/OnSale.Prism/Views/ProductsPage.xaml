@@ -7,12 +7,17 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="true"
              xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             xmlns:i18n="clr-namespace:OnSale.Prism.Helpers"
              x:Class="OnSale.Prism.Views.ProductsPage"
              Title="{Binding Title}">
     
     <AbsoluteLayout>
         <StackLayout Padding="5" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
-            <SearchBar Placeholder="Search a Product....." SearchCommand="{Binding SearchCommand}" Text="{Binding Search}"></SearchBar>
+            <SearchBar 
+                Placeholder="Search Product" 
+                SearchCommand="{Binding SearchCommand}" 
+                Text="{Binding Search}">                
+            </SearchBar>
             <CollectionView ItemsSource="{Binding Products}">
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical"/>
@@ -61,7 +66,7 @@
                 	                   HorizontalOptions="Center"
                 	                   TextColor="White"
                 	                   IsBusy="{Binding IsRunning}"
-                	                   Title="Loading..."
+                	                   Title="Loading"
                 	                   VerticalOptions="Center"
                 	                   ViewBoxWidth="80"
                 	                   ViewBoxHeight="80" />

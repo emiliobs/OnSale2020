@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hZcRk3XLQtNqQ39E+v7fZRx+rPkf4VMPUFF1VRRpA+Vo9LFCnKPv3I0vPEcLfwRFy8CP5CK3OrgOTFqmHaQ2dw==",
+  "dgSpecHash": "eb/0SSoqEPzOpvyot73goIP6dNR83f1PZsOkFnBoZZ5JxFE9SpqoZeX4odNoYGFZjf8RmXOGzqBX/Q3frvaJOg==",
   "success": true,
   "projectFilePath": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism.iOS\\OnSale.Prism.iOS.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,7 @@
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.essentials.interfaces\\1.6.1-preview2\\xamarin.essentials.interfaces.1.6.1-preview2.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
-    "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.forms\\5.0.0.1905\\xamarin.forms.5.0.0.1905.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []
 }
