@@ -1,5 +1,6 @@
 ﻿using Onsale.Common.Entities;
 using Onsale.Common.Helpers;
+using Onsale.Prism.Helpers;
 using Prism.Navigation;
 using System.Collections.ObjectModel;
 

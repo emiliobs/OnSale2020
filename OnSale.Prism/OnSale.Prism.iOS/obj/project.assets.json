@@ -354,9 +354,9 @@
         "dependencies": {
           "Onsale.Common": "1.0.0",
           "Prism.DryIoc.Forms": "8.0.0.1909",
-          "Syncfusion.Xamarin.SfBusyIndicator": "18.4.0.35",
-          "Syncfusion.Xamarin.SfRotator": "18.4.0.35",
-          "Xamarin.Essentials.Interfaces": "1.6.1-preview2",
+          "Syncfusion.Xamarin.SfBusyIndicator": "18.4.0.48",
+          "Syncfusion.Xamarin.SfRotator": "18.4.0.48",
+          "Xamarin.Essentials.Interfaces": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -721,9 +721,9 @@
         "dependencies": {
           "Onsale.Common": "1.0.0",
           "Prism.DryIoc.Forms": "8.0.0.1909",
-          "Syncfusion.Xamarin.SfBusyIndicator": "18.4.0.35",
-          "Syncfusion.Xamarin.SfRotator": "18.4.0.35",
-          "Xamarin.Essentials.Interfaces": "1.6.1-preview2",
+          "Syncfusion.Xamarin.SfBusyIndicator": "18.4.0.48",
+          "Syncfusion.Xamarin.SfRotator": "18.4.0.48",
+          "Xamarin.Essentials.Interfaces": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -1088,9 +1088,9 @@
         "dependencies": {
           "Onsale.Common": "1.0.0",
           "Prism.DryIoc.Forms": "8.0.0.1909",
-          "Syncfusion.Xamarin.SfBusyIndicator": "18.4.0.35",
-          "Syncfusion.Xamarin.SfRotator": "18.4.0.35",
-          "Xamarin.Essentials.Interfaces": "1.6.1-preview2",
+          "Syncfusion.Xamarin.SfBusyIndicator": "18.4.0.48",
+          "Syncfusion.Xamarin.SfRotator": "18.4.0.48",
+          "Xamarin.Essentials.Interfaces": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -1455,9 +1455,9 @@
         "dependencies": {
           "Onsale.Common": "1.0.0",
           "Prism.DryIoc.Forms": "8.0.0.1909",
-          "Syncfusion.Xamarin.SfBusyIndicator": "18.4.0.35",
-          "Syncfusion.Xamarin.SfRotator": "18.4.0.35",
-          "Xamarin.Essentials.Interfaces": "1.6.1-preview2",
+          "Syncfusion.Xamarin.SfBusyIndicator": "18.4.0.48",
+          "Syncfusion.Xamarin.SfRotator": "18.4.0.48",
+          "Xamarin.Essentials.Interfaces": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -2417,5 +2417,46 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.SfRotator from 18.4.0.48 to 18.4.0.35. Reference the package directly from the project to select a different version. \r\n OnSale.Prism.iOS -> OnSale.Prism -> Syncfusion.Xamarin.SfRotator (>= 18.4.0.48) \r\n OnSale.Prism.iOS -> Syncfusion.Xamarin.SfRotator (>= 18.4.0.35)",
+      "libraryId": "Syncfusion.Xamarin.SfRotator",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.SfBusyIndicator from 18.4.0.48 to 18.4.0.35. Reference the package directly from the project to select a different version. \r\n OnSale.Prism.iOS -> OnSale.Prism -> Syncfusion.Xamarin.SfBusyIndicator (>= 18.4.0.48) \r\n OnSale.Prism.iOS -> Syncfusion.Xamarin.SfBusyIndicator (>= 18.4.0.35)",
+      "libraryId": "Syncfusion.Xamarin.SfBusyIndicator",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials.Interfaces from 1.6.1 to 1.6.1-preview2. Reference the package directly from the project to select a different version. \r\n OnSale.Prism.iOS -> OnSale.Prism -> Xamarin.Essentials.Interfaces (>= 1.6.1) \r\n OnSale.Prism.iOS -> Xamarin.Essentials.Interfaces (>= 1.6.1-preview2)",
+      "libraryId": "Xamarin.Essentials.Interfaces",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
 }

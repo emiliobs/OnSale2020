@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oKpfdcip6Z7WxEDRGUclaC69hij6aK+/f0J53bnsJD8zt05h6ZMVZudFBmIXsBzargxvURhx/fKT4QgSFppL2g==",
+  "dgSpecHash": "iKeVFknxqiv04naCEliRbTP4guiFza22EClIheJwm8X1vPyS0vRhsLJId/K7XcAhI8qi8pLlFSbFzK5ESlGSWw==",
   "success": true,
   "projectFilePath": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism.Android\\OnSale.Prism.Android.csproj",
   "expectedPackageFiles": [
@@ -68,5 +68,36 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.android.material\\1.2.1.1\\xamarin.google.android.material.1.2.1.1.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.SfRotator from 18.4.0.48 to 18.4.0.35. Reference the package directly from the project to select a different version. \r\n OnSale.Prism.Android -> OnSale.Prism -> Syncfusion.Xamarin.SfRotator (>= 18.4.0.48) \r\n OnSale.Prism.Android -> Syncfusion.Xamarin.SfRotator (>= 18.4.0.35)",
+      "libraryId": "Syncfusion.Xamarin.SfRotator",
+      "targetGraphs": [
+        "MonoAndroid,Version=v10.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Syncfusion.Xamarin.SfBusyIndicator from 18.4.0.48 to 18.4.0.35. Reference the package directly from the project to select a different version. \r\n OnSale.Prism.Android -> OnSale.Prism -> Syncfusion.Xamarin.SfBusyIndicator (>= 18.4.0.48) \r\n OnSale.Prism.Android -> Syncfusion.Xamarin.SfBusyIndicator (>= 18.4.0.35)",
+      "libraryId": "Syncfusion.Xamarin.SfBusyIndicator",
+      "targetGraphs": [
+        "MonoAndroid,Version=v10.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials.Interfaces from 1.6.1 to 1.6.1-preview2. Reference the package directly from the project to select a different version. \r\n OnSale.Prism.Android -> OnSale.Prism -> Xamarin.Essentials.Interfaces (>= 1.6.1) \r\n OnSale.Prism.Android -> Xamarin.Essentials.Interfaces (>= 1.6.1-preview2)",
+      "libraryId": "Xamarin.Essentials.Interfaces",
+      "targetGraphs": [
+        "MonoAndroid,Version=v10.0"
+      ]
+    }
+  ]
 }

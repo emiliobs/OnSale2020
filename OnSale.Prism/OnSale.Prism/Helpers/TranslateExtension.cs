@@ -12,7 +12,7 @@ namespace OnSale.Prism.Helpers
     public class TranslateExtension : IMarkupExtension
     {
         private readonly CultureInfo ci;
-        private const string ResourceId = "OnSale2020.Common.Resources.Resource";
+        private const string ResourceId = "OnSale.Prism.Resources.Resource";
         private static readonly Lazy<ResourceManager> ResMgr =
             new Lazy<ResourceManager>(() => new ResourceManager(
                 ResourceId,

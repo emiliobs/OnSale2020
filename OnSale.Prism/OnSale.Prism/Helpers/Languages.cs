@@ -1,8 +1,9 @@
-﻿using OnSale.Prism.Resources;
+﻿using Onsale.Common.Helpers;
+using OnSale.Prism.Resources;
 using System.Globalization;
 using Xamarin.Forms;
 
-namespace Onsale.Common.Helpers
+namespace Onsale.Prism.Helpers
 {
     public class Languages
     {

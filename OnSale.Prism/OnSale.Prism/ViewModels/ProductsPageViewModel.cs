@@ -2,6 +2,7 @@
 using Onsale.Common.Helpers;
 using Onsale.Common.Responses;
 using Onsale.Common.Services;
+using Onsale.Prism.Helpers;
 using OnSale.Prism.ItemViewModel;
 using Prism.Commands;
 using Prism.Navigation;
