@@ -10,7 +10,7 @@
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  <application android:label="@string/app_name" android:icon="@mipmap/icon" android:name="crc64a91d60dba1d975f1.MainApplication" android:theme="@style/MainTheme" android:allowBackup="true" android:debuggable="true" android:extractNativeLibs="true">
+  <application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="crc64a91d60dba1d975f1.MainApplication" android:theme="@style/MainTheme" android:allowBackup="true" android:debuggable="true" android:extractNativeLibs="true">
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:theme="@style/MainTheme" android:name="crc64a91d60dba1d975f1.MainActivity" />
     <activity android:noHistory="true" android:theme="@style/MainTheme.Splash" android:name="crc64a91d60dba1d975f1.SplashActivity">
       <intent-filter>
