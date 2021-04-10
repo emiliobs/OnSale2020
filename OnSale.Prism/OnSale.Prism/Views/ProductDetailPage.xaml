@@ -7,6 +7,7 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"  
              xmlns:i18n="clr-namespace:OnSale.Prism.Helpers"
              x:Class="OnSale.Prism.Views.ProductDetailPage"
+             BackgroundColor="{StaticResource ColorBackground}"
              Title="{Binding Title}">
 
     <StackLayout Padding="5">
@@ -87,11 +88,9 @@
                 </Grid>
             </StackLayout>
         </ScrollView>
-        <Button BackgroundColor="Navy"
-                Command="{Binding AddToCartBinding}" 
-                CornerRadius="10"
-                Text="{i18n:Translate AddToCart}"
-                TextColor="White"
+        <Button 
+                Command="{Binding AddToCartBinding}"                
+                Text="{i18n:Translate AddToCart}"               
                 VerticalOptions="EndAndExpand"/>
     </StackLayout>
 
