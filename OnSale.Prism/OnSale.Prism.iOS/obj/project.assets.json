@@ -2339,11 +2339,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism.iOS\\OnSale.Prism.iOS.csproj",
+      "projectUniqueName": "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism.iOS\\OnSale.Prism.iOS.csproj",
       "projectName": "OnSale.Prism.iOS",
-      "projectPath": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism.iOS\\OnSale.Prism.iOS.csproj",
+      "projectPath": "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism.iOS\\OnSale.Prism.iOS.csproj",
       "packagesPath": "C:\\Users\\Emilio\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism.iOS\\obj\\",
+      "outputPath": "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2366,11 +2366,11 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Projects4\\OnSale2020\\Onsale.Common\\Onsale.Common.csproj": {
-              "projectPath": "C:\\Projects4\\OnSale2020\\Onsale.Common\\Onsale.Common.csproj"
+            "C:\\Projects5\\OnSale\\Onsale.Common\\Onsale.Common.csproj": {
+              "projectPath": "C:\\Projects5\\OnSale\\Onsale.Common\\Onsale.Common.csproj"
             },
-            "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj": {
-              "projectPath": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj"
+            "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj": {
+              "projectPath": "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj"
             }
           }
         }

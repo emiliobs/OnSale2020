@@ -43,6 +43,13 @@ namespace Onsale.Prism.Helpers
 
         public static string Products => Resource.Products;
 
+        public static string Login => Resource.Login;
+
+        public static string ShowShoppingCar => Resource.ShowShoppingCar;
+
+        public static string ShowPurchaseHistory => Resource.ShowPurchaseHistory;
+
+        public static string ModifyUser => Resource.ModifyUser;
 
     }
 }

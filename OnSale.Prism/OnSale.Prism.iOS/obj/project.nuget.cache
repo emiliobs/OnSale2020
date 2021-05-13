@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6OIlpql1iltPuj6I6YDjPWJocurgXscp8ginc+oicOmWk6JQphcZdTURLs/OXL1XYwmWzd7jbsGaGniHaTWykg==",
+  "dgSpecHash": "8fSIxyOvdEZbUzSnX6Kz2+OlTdZgzr8nMoiqZU3JRA2uxdGar7bVFdjT72vt3htat3HgWrj97utn2+U7yH3DIA==",
   "success": true,
-  "projectFilePath": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism.iOS\\OnSale.Prism.iOS.csproj",
+  "projectFilePath": "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism.iOS\\OnSale.Prism.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emilio\\.nuget\\packages\\dryioc.dll\\4.5.0\\dryioc.dll.4.5.0.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",

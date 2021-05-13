@@ -1,22 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism.Android\\OnSale.Prism.Android.csproj": {}
+    "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism.Android\\OnSale.Prism.Android.csproj": {}
   },
   "projects": {
-    "C:\\Projects4\\OnSale2020\\Onsale.Common\\Onsale.Common.csproj": {
+    "C:\\Projects5\\OnSale\\Onsale.Common\\Onsale.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects4\\OnSale2020\\Onsale.Common\\Onsale.Common.csproj",
+        "projectUniqueName": "C:\\Projects5\\OnSale\\Onsale.Common\\Onsale.Common.csproj",
         "projectName": "Onsale.Common",
-        "projectPath": "C:\\Projects4\\OnSale2020\\Onsale.Common\\Onsale.Common.csproj",
+        "projectPath": "C:\\Projects5\\OnSale\\Onsale.Common\\Onsale.Common.csproj",
         "packagesPath": "C:\\Users\\Emilio\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects4\\OnSale2020\\Onsale.Common\\obj\\",
+        "outputPath": "C:\\Projects5\\OnSale\\Onsale.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Emilio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -76,18 +75,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism.Android\\OnSale.Prism.Android.csproj": {
+    "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism.Android\\OnSale.Prism.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism.Android\\OnSale.Prism.Android.csproj",
+        "projectUniqueName": "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism.Android\\OnSale.Prism.Android.csproj",
         "projectName": "OnSale.Prism.Android",
-        "projectPath": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism.Android\\OnSale.Prism.Android.csproj",
+        "projectPath": "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism.Android\\OnSale.Prism.Android.csproj",
         "packagesPath": "C:\\Users\\Emilio\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism.Android\\obj\\",
+        "outputPath": "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -110,11 +109,11 @@
         "frameworks": {
           "monoandroid10.0": {
             "projectReferences": {
-              "C:\\Projects4\\OnSale2020\\Onsale.Common\\Onsale.Common.csproj": {
-                "projectPath": "C:\\Projects4\\OnSale2020\\Onsale.Common\\Onsale.Common.csproj"
+              "C:\\Projects5\\OnSale\\Onsale.Common\\Onsale.Common.csproj": {
+                "projectPath": "C:\\Projects5\\OnSale\\Onsale.Common\\Onsale.Common.csproj"
               },
-              "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj": {
-                "projectPath": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj"
+              "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj": {
+                "projectPath": "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj"
               }
             }
           }
@@ -151,19 +150,18 @@
         }
       }
     },
-    "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj": {
+    "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj",
+        "projectUniqueName": "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj",
         "projectName": "OnSale.Prism",
-        "projectPath": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj",
+        "projectPath": "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj",
         "packagesPath": "C:\\Users\\Emilio\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects4\\OnSale2020\\OnSale.Prism\\OnSale.Prism\\obj\\",
+        "outputPath": "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Emilio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -182,8 +180,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Projects4\\OnSale2020\\Onsale.Common\\Onsale.Common.csproj": {
-                "projectPath": "C:\\Projects4\\OnSale2020\\Onsale.Common\\Onsale.Common.csproj"
+              "C:\\Projects5\\OnSale\\Onsale.Common\\Onsale.Common.csproj": {
+                "projectPath": "C:\\Projects5\\OnSale\\Onsale.Common\\Onsale.Common.csproj"
               }
             }
           }
@@ -239,7 +237,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
