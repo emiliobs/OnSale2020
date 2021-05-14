@@ -15,3 +15,4 @@ C:\Projects5\OnSale\Onsale.Common\obj\Debug\netstandard2.0\Onsale.Common.Assembl
 C:\Projects5\OnSale\Onsale.Common\obj\Debug\netstandard2.0\Onsale.Common.csproj.CoreCompileInputs.cache
 C:\Projects5\OnSale\Onsale.Common\obj\Debug\netstandard2.0\Onsale.Common.dll
 C:\Projects5\OnSale\Onsale.Common\obj\Debug\netstandard2.0\Onsale.Common.pdb
+C:\Projects5\OnSale\Onsale.Common\obj\Debug\netstandard2.0\Onsale.Common.csprojAssemblyReference.cache

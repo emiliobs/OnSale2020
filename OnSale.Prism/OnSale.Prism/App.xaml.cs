@@ -22,8 +22,8 @@ namespace OnSale.Prism
             SyncfusionLicenseProvider.RegisterLicense("Mzg1ODQ1QDMxMzgyZTM0MmUzMEhnVEQrcWNaalhudGMxSENJbTFYU0NPQ3NVeHlUU3JTbHByR0NYUXBnMXc9");
 
             InitializeComponent();
-
-            await NavigationService.NavigateAsync($"NavigationPage/{nameof(ProductsPage)}");
+            await NavigationService.NavigateAsync($"{nameof(OnSaleMasterDetailPage)}/NavigationPage/{nameof(ProductsPage)}");
+            //await NavigationService.NavigateAsync($"NavigationPage/{nameof(ProductsPage)}");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
