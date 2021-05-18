@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "j/CKya3rvG3dp8CjAND4Vkwa8Tjx7oAk/zD9wLGljbWDkcHU0eBov/OuKFxyorMkL4a6It6xIXTLm8hsp+1UfQ==",
+  "dgSpecHash": "iVDcKAkgtiyVcV+0boE6GdNLFLn5572pgVOZ9wq5zWgnobKxcaHYW0PXBVlFS9LwnxM9C9X4pTBN+ZX2RFuMZg==",
   "success": true,
   "projectFilePath": "C:\\Projects5\\OnSale\\OnSale.Prism\\OnSale.Prism\\OnSale.Prism.csproj",
   "expectedPackageFiles": [
@@ -12,8 +12,8 @@
     "C:\\Users\\Emilio\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\prism.dryioc.forms\\8.0.0.1909\\prism.dryioc.forms.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\prism.forms\\8.0.0.1909\\prism.forms.8.0.0.1909.nupkg.sha512",
-    "C:\\Users\\Emilio\\.nuget\\packages\\syncfusion.licensing\\18.4.0.48\\syncfusion.licensing.18.4.0.48.nupkg.sha512",
-    "C:\\Users\\Emilio\\.nuget\\packages\\syncfusion.xamarin.core\\18.4.0.48\\syncfusion.xamarin.core.18.4.0.48.nupkg.sha512",
+    "C:\\Users\\Emilio\\.nuget\\packages\\syncfusion.licensing\\19.1.0.63\\syncfusion.licensing.19.1.0.63.nupkg.sha512",
+    "C:\\Users\\Emilio\\.nuget\\packages\\syncfusion.xamarin.core\\19.1.0.63\\syncfusion.xamarin.core.19.1.0.63.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\syncfusion.xamarin.sfbusyindicator\\18.4.0.48\\syncfusion.xamarin.sfbusyindicator.18.4.0.48.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\syncfusion.xamarin.sfrotator\\18.4.0.48\\syncfusion.xamarin.sfrotator.18.4.0.48.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
@@ -26,6 +26,7 @@
     "C:\\Users\\Emilio\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\Emilio\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.essentials.interfaces\\1.6.1\\xamarin.essentials.interfaces.1.6.1.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",

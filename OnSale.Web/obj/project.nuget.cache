@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+MxeD5hYtrP2iDPNxZS42RSk8m7UsrvgJp0Jmwt5Th1PIdbwBnNtbgMdhPe9iLn//tMx2XXx7kyBzQGMjKq5qg==",
+  "dgSpecHash": "VrlYct2x0UUqVeHVRYWL1ty06KgXFYPO/vWlDD+whJwZgHan0czLZZ8sF+9DMowamRpx94aZEoo5dea6ddkSgw==",
   "success": true,
   "projectFilePath": "C:\\Projects5\\OnSale\\OnSale.Web\\OnSale.Web.csproj",
   "expectedPackageFiles": [
@@ -182,6 +182,7 @@
     "C:\\Users\\Emilio\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\Emilio\\.nuget\\packages\\windowsazure.storage\\9.3.3\\windowsazure.storage.9.3.3.nupkg.sha512",
+    "C:\\Users\\Emilio\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []

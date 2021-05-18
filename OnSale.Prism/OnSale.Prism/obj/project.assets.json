@@ -91,7 +91,7 @@
           "lib/netstandard2.0/Prism.Forms.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.4.0.48": {
+      "Syncfusion.Licensing/19.1.0.63": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
@@ -100,10 +100,10 @@
           "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.48": {
+      "Syncfusion.Xamarin.Core/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.48",
+          "Syncfusion.Licensing": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -255,6 +255,20 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/Plugin.Settings.Abstractions.dll": {},
+          "lib/netstandard1.0/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Plugin.Settings.Abstractions.dll": {},
+          "lib/netstandard1.0/Plugin.Settings.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -326,6 +340,7 @@
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
           "System.ComponentModel.Annotations": "5.0.0",
+          "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
@@ -614,10 +629,10 @@
         "prism.forms.nuspec"
       ]
     },
-    "Syncfusion.Licensing/18.4.0.48": {
-      "sha512": "oXAdH7utKg/e8/oOeymi88yeXyFf7PzY9ONir+hWgjAUWwKFRaco8SQXI/hCfyCq1fDPHyHQUSJE8S2oVBfutQ==",
+    "Syncfusion.Licensing/19.1.0.63": {
+      "sha512": "SXRZFTbWpSEADWQJQ2tgoeA7Ib0tSgZ4PdzVJKKxuGWprAsu9XcbcZTCfG6AEHdrsD5iBW8aSs3Tb4as8EMdZg==",
       "type": "package",
-      "path": "syncfusion.licensing/18.4.0.48",
+      "path": "syncfusion.licensing/19.1.0.63",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -631,22 +646,22 @@
         "lib/net45/Syncfusion.Licensing.dll",
         "lib/net451/Syncfusion.Licensing.dll",
         "lib/net46/Syncfusion.Licensing.dll",
+        "lib/net5.0/Syncfusion.Licensing.dll",
         "lib/netcoreapp3.1/Syncfusion.Licensing.dll",
-        "lib/netcoreapp5.0/Syncfusion.Licensing.dll",
         "lib/netstandard1.0/Syncfusion.Licensing.dll",
         "lib/netstandard1.2/Syncfusion.Licensing.dll",
         "lib/netstandard1.4/Syncfusion.Licensing.dll",
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.18.4.0.48.nupkg.sha512",
+        "syncfusion.licensing.19.1.0.63.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Core/18.4.0.48": {
-      "sha512": "YqaGlayse0xoAf0Ni0mTENIYx/day7dPFYdqZcb6uDhz1To0VzR0vt6u7aJ7VaQA5ceaHIXdLVgw7KY3rhTbCA==",
+    "Syncfusion.Xamarin.Core/19.1.0.63": {
+      "sha512": "GgYc7c6lUqAj4PUxp9nijwcVKkIq/E/9ft4MCi6b80uKDB7nJrhU0GV0b+CgNp+cHiOgqNr/nA6OYGcy5u+kRQ==",
       "type": "package",
-      "path": "syncfusion.xamarin.core/18.4.0.48",
+      "path": "syncfusion.xamarin.core/19.1.0.63",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -674,7 +689,7 @@
         "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
         "lib/uap10.0/Syncfusion.Core.XForms.dll",
         "lib/uap10.0/Syncfusion.Core.XForms.xml",
-        "syncfusion.xamarin.core.18.4.0.48.nupkg.sha512",
+        "syncfusion.xamarin.core.19.1.0.63.nupkg.sha512",
         "syncfusion.xamarin.core.nuspec"
       ]
     },
@@ -1413,6 +1428,74 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "Xam.Plugins.Settings/3.1.1": {
+      "sha512": "EQEYQJ64ZLqui5GWkLMavgqitHxwUHZHryTzUD1021UBuz1XwDSjPL45W0K4pPXjz9oKbg7YpRXKPR1luPr/5Q==",
+      "type": "package",
+      "path": "xam.plugins.settings/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/MonoAndroid10/Helpers/Settings.cs.pp",
+        "content/UAP10/Helpers/Settings.cs.pp",
+        "content/Xamarin.Mac20/Helpers/Settings.cs.pp",
+        "content/Xamarin.iOS10/Helpers/Settings.cs.pp",
+        "content/net45/Helpers/Settings.cs.pp",
+        "content/netstandard1.0/Helpers/Settings.cs.pp",
+        "content/xamarintvOS/Helpers/Settings.cs.pp",
+        "content/xamarinwatchOS/Helpers/Settings.cs.pp",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Settings.dll",
+        "lib/MonoAndroid10/Plugin.Settings.pdb",
+        "lib/MonoAndroid10/Plugin.Settings.xml",
+        "lib/UAP10/Plugin.Settings.Abstractions.dll",
+        "lib/UAP10/Plugin.Settings.Abstractions.pdb",
+        "lib/UAP10/Plugin.Settings.Abstractions.xml",
+        "lib/UAP10/Plugin.Settings.XML",
+        "lib/UAP10/Plugin.Settings.dll",
+        "lib/UAP10/Plugin.Settings.pdb",
+        "lib/UAP10/Plugin.Settings.pri",
+        "lib/Xamarin.Mac20/Plugin.Settings.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.Settings.Abstractions.pdb",
+        "lib/Xamarin.Mac20/Plugin.Settings.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.Settings.XML",
+        "lib/Xamarin.Mac20/Plugin.Settings.dll",
+        "lib/Xamarin.Mac20/Plugin.Settings.pdb",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Settings.dll",
+        "lib/Xamarin.iOS10/Plugin.Settings.xml",
+        "lib/net45/Plugin.Settings.Abstractions.dll",
+        "lib/net45/Plugin.Settings.Abstractions.pdb",
+        "lib/net45/Plugin.Settings.Abstractions.xml",
+        "lib/net45/Plugin.Settings.XML",
+        "lib/net45/Plugin.Settings.dll",
+        "lib/net45/Plugin.Settings.pdb",
+        "lib/netstandard1.0/Plugin.Settings.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Settings.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Settings.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Settings.deps.json",
+        "lib/netstandard1.0/Plugin.Settings.dll",
+        "lib/netstandard1.0/Plugin.Settings.xml",
+        "lib/xamarintvOS/Plugin.Settings.Abstractions.dll",
+        "lib/xamarintvOS/Plugin.Settings.Abstractions.pdb",
+        "lib/xamarintvOS/Plugin.Settings.Abstractions.xml",
+        "lib/xamarintvOS/Plugin.Settings.dll",
+        "lib/xamarintvOS/Plugin.Settings.pdb",
+        "lib/xamarintvOS/Plugin.Settings.xml",
+        "lib/xamarinwatchOS/Plugin.Settings.Abstractions.dll",
+        "lib/xamarinwatchOS/Plugin.Settings.Abstractions.pdb",
+        "lib/xamarinwatchOS/Plugin.Settings.Abstractions.xml",
+        "lib/xamarinwatchOS/Plugin.Settings.dll",
+        "lib/xamarinwatchOS/Plugin.Settings.pdb",
+        "lib/xamarinwatchOS/Plugin.Settings.xml",
+        "readme.txt",
+        "xam.plugins.settings.3.1.1.nupkg.sha512",
+        "xam.plugins.settings.nuspec"
+      ]
+    },
     "Xamarin.Essentials/1.6.1": {
       "sha512": "gG1Bp4j4bpJQ0dp9MeBJQJ9c8xULauIlhc7Cx5Qw4J2K1c+4Glq5n+gkb9Pm0UA/CevXVqLK5ZXmZkuYI52FgA==",
       "type": "package",
@@ -1813,6 +1896,7 @@
       "NETStandard.Library >= 2.0.3",
       "Onsale.Common >= 1.0.0",
       "Prism.DryIoc.Forms >= 8.0.0.1909",
+      "Syncfusion.Xamarin.Core >= 19.1.0.63",
       "Syncfusion.Xamarin.SfBusyIndicator >= 18.4.0.48",
       "Syncfusion.Xamarin.SfRotator >= 18.4.0.48",
       "Xamarin.Essentials.Interfaces >= 1.6.1",
@@ -1880,6 +1964,10 @@
           "Prism.DryIoc.Forms": {
             "target": "Package",
             "version": "[8.0.0.1909, )"
+          },
+          "Syncfusion.Xamarin.Core": {
+            "target": "Package",
+            "version": "[19.1.0.63, )"
           },
           "Syncfusion.Xamarin.SfBusyIndicator": {
             "target": "Package",

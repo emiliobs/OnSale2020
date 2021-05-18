@@ -13,6 +13,8 @@ public class MonoPackageManager_Resources {
 		"Newtonsoft.Json.dll",
 		"Onsale.Common.dll",
 		"OnSale.Prism.dll",
+		"Plugin.Settings.Abstractions.dll",
+		"Plugin.Settings.dll",
 		"Prism.dll",
 		"Prism.DryIoc.Forms.dll",
 		"Prism.Forms.dll",
